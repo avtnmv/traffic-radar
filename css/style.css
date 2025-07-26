@@ -1748,4 +1748,16 @@ footer{
 
     }
 
-  
+  @keyframes shake {
+  0% { transform: translate(0, 0) rotate(0); }
+  20% { transform: translate(-2px, 0) rotate(-2deg); }
+  40% { transform: translate(2px, 0) rotate(2deg); }
+  60% { transform: translate(-2px, 0) rotate(-2deg); }
+  80% { transform: translate(2px, 0) rotate(2deg); }
+  100% { transform: translate(0, 0) rotate(0); }
+}
+
+.shake {
+  animation: shake 0.6s ease-in-out infinite;
+  animation-delay: 0s; /* задержка перед началом */
+}
