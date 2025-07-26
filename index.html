@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Radar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Mono:wght@100..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="container">
+        <a href="#" class="logo"><img src="./img/logo.webp" alt="logo" width="138px" height="48px"></a>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="" data-i18n="about" >Про нас</a></li>
+                <li><a href="" data-i18n="offers">Топ офферы</a></li>
+                <li><a href="" data-i18n="tools">Инструменты</a></li>
+                <li><a href="" data-i18n="bonuses">Бонусы</a></li>
+                <li><a href="" data-i18n="reviews">Отзывы</a></li>
+                <li><a href="" data-i18n="contacts">Контакты</a></li>
+            </ul>
+
+            <div class="partner-container">
+                <a href="https://trafficradar.affise.com/v2/sign/up" class="partner" data-i18n="partner">Стать партнером</a>
+
+                <a href="https://trafficradar.affise.com/v2/sign/in" class="login-container">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#01E083" d="M3.529 16.412h1.059v5.294H3.529zm15.883 0h1.059v5.294h-1.059zm0 4.235v1.059H4.589v-1.059zm-2.118-7.412v1.059H6.706v-1.059zM5.647 15.353v1.059H4.588v-1.059zm13.765 0v1.059h-1.059v-1.059zm-1.06-1.059v1.059h-1.059v-1.059zM15.177 9v1.059h-1.059V9zM8.823 9v1.059h1.059V9zm6.354-5.294v1.059h1.059V3.706zm-6.354 0v1.059H7.764V3.706zm7.412 4.235V9h-1.059V7.941zm-8.47 0V9h1.059V7.941zm6.352-5.294v1.059h1.059V2.647zm-4.234 0v1.059H8.824V2.647zm7.411 2.118v3.176h-1.059V4.765zm-9.529 0v3.176H6.706V4.765zm-1.059 9.529v1.059H5.647v-1.059zM9.883 1.588h4.235v1.059H9.883zm0 8.471h4.235v1.059H9.883z"/></svg>
+
+                    <span data-i18n="login">ВХОД</span>
+                </a>
+
+                <div class="language-switcher">
+                <button class="lang-toggle"><span id="current-lang">RU</span></button>
+                <div class="lang-menu">
+                    <button class="lang-btn" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ua">UA</button>
+                </div>
+                </div>
+            </div>
+        </nav>
+
+    <div class="burger-menu" id="burger-menu">
+        <ul>
+            <li><a href="" data-i18n="about" >Про нас</a></li>
+            <li><a href="" data-i18n="offers">Топ офферы</a></li>
+            <li><a href="" data-i18n="tools">Инструменты</a></li>
+            <li><a href="" data-i18n="bonuses">Бонусы</a></li>
+            <li><a href="" data-i18n="reviews">Отзывы</a></li>
+            <li><a href="" data-i18n="contacts">Контакты</a></li>
+        </ul>
+
+        <div class="burger-icons">
+            <a href=""><img src="./img/post-icon.webp" alt="post-icon" width="50px" height="50px"></a>
+            <a href=""><img src="./img/tg-icon.webp" alt="tg-icon" width="50px" height="50px"></a>
+            <a href="https://www.instagram.com/trafficradar.partners/"><img src="./img/inst-icon.webp" alt="inst-icon" width="50px" height="50px"></a>
+        </div>
+    </div>
+
+    
+    <div class="burger-icon" id="burger-icon">
+        
+        <div class="burger-stick"></div>
+        <div class="burger-stick"></div>
+
+    </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">TRAFFIC RADAR</h1>
+            <p class="hero__subtitle">ваша партнёрская сеть в iGaming</p>
+
+            <div class="hero__features">
+            <div class="hero__feature">
+                <img src="./img/hero-icon-first.webp" alt="icon" class="hero__feature-icon" width="45" height="45">
+                <p class="hero__feature-text">CPA <br> до $600</p>
+            </div>
+
+            <div class="hero__feature">
+                <img src="./img/hero-icon-second.webp" alt="icon" class="hero__feature-icon" width="45" height="45">
+                <p class="hero__feature-text">800+ эксклюзивных <br> офферов</p>
+            </div>
+
+            <div class="hero__feature">
+                <img src="./img/hero-icon-third.webp" alt="icon" class="hero__feature-icon" width="45" height="45">
+                <p class="hero__feature-text">Выплаты <br> от $10 </p>
+            </div>
+            </div>
+
+            <a href="https://trafficradar.affise.com/v2/sign/up" class="hero__cta">
+                Стать партнером
+                
+                <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M26.61 27.222V9.444h4.444v17.778zM13.277 9.444H26.61v4.444H13.277zm8.889 4.445h4.444v4.444h-4.444zm-4.444 4.444h4.444v4.444h-4.444zm-4.445 4.445h4.444v4.444h-4.444zm-4.444 4.444h4.444v4.444H8.833z"/></svg>
+            </a>
+        </div>
+
+            <div class="hero__video">
+                <video src="./img/radar.mp4" autoplay loop muted playsinline></video>
+
+                <img src="./img/gift-button.webp" alt="preview" class="hero__preview-trigger">
+            </div>
+
+            <!-- Fullscreen Video Modal -->
+            <div id="fullscreen-video" class="fullscreen-video hidden">
+            <video id="caseVideo" src="./img/case.mp4" muted playsinline></video>
+            </div>
+
+            <div id="caseModal" class="case-modal hidden">
+  <div class="case-modal__overlay"></div>
+  <div class="case-modal__content">
+    <button class="case-modal__close" aria-label="Закрити">
+      &times;
+    </button>
+
+    <h2>Бонусна програма Traffic Radar</h2>
+    <p class="modal-subtitle">(V2 – Hybrid + Fun + Value)</p>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-item__card">
+          <div class="accordion-item__header">
+            <img src="./img/accordion-icon-1.webp" alt="">
+            <h3>+$50 за відгук на LinkedIn</h3>
+            <button class="accordion-toggle" aria-label="Toggle">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M8.768 10.91 16 18.1l7.233-7.192 2.222 2.214L16 22.545l-9.454-9.422z" fill="#fff"/>
+              </svg>
+            </button>
+          </div>
+          <div class="accordion-item__body">
+            <p>Залиш відгук про співпрацю з Traffic Radar на LinkedIn — і отримай +50$ до виплати</p>
+          </div>
+        </div>
+      </div>
+
+            <div class="accordion-item">
+        <div class="accordion-item__card">
+          <div class="accordion-item__header">
+            <img src="./img/accordion-icon-2.webp" alt="">
+            <h3>Підвищена ставка на 3 дні</h3>
+            <button class="accordion-toggle" aria-label="Toggle">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M8.768 10.91 16 18.1l7.233-7.192 2.222 2.214L16 22.545l-9.454-9.422z" fill="#fff"/>
+              </svg>
+            </button>
+          </div>
+          <div class="accordion-item__body">
+            <p>Активується в разі приросту FTD або за ініціативою AM для мотивації</p>
+          </div>
+        </div>
+      </div>
+
+            <div class="accordion-item">
+        <div class="accordion-item__card">
+          <div class="accordion-item__header">
+            <img src="./img/accordion-icon-3.webp" alt="">
+            <h3>Купон Keitaro на 1 місяць + допомога в налаштуванні</h3>
+            <button class="accordion-toggle" aria-label="Toggle">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M8.768 10.91 16 18.1l7.233-7.192 2.222 2.214L16 22.545l-9.454-9.422z" fill="#fff"/>
+              </svg>
+            </button>
+          </div>
+          <div class="accordion-item__body">
+            <p>Після 10 FTD або тест-капи — безкоштовний промокод + AM допомагає налаштувати</p>
+          </div>
+        </div>
+      </div>
+
+            <div class="accordion-item">
+        <div class="accordion-item__card">
+          <div class="accordion-item__header">
+            <img src="./img/accordion-icon-4.webp" alt="">
+            <h3>П’ятнична Рулетка — “Free Spins”</h3>
+            <button class="accordion-toggle" aria-label="Toggle">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M8.768 10.91 16 18.1l7.233-7.192 2.222 2.214L16 22.545l-9.454-9.422z" fill="#fff"/>
+              </svg>
+            </button>
+          </div>
+          <div class="accordion-item__body">
+            <p>Кожної п’ятниці активним вебам пропонується обертання рулетки</p>
+          </div>
+        </div>
+      </div>
+
+<div class="accordion-item accordion-item-second">
+  <div class="accordion-item__card no-border">
+    <div class="accordion-item__header header-stacked">
+      <div class="header-top">
+        <h3>На П’ятничній рулетці призи можуть бути:</h3>
+      </div>
+      <button class="accordion-toggle" aria-label="Toggle">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <path d="M8.768 10.91 16 18.1l7.233-7.192 2.222 2.214L16 22.545l-9.454-9.422z" fill="#fff"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="accordion-item__body">
+      <ul class="bonus-list custom-icons">
+        <li>+30% до депозита (на виплату)</li>
+        <li>Купон Keitaro 1 місяць</li>
+        <li>Мерч Traffic Radar (футболка/худі/кепка)</li>
+        <li>10$–50$ у крипті</li>
+        <li>"Пролітай" — елемент азарту</li>
+        <li>Кешбек 10% від пролитого трафіку</li>
+      </ul>
+    </div>
+  </div>
+</div>
+    </div>
+
+  </div>
+</div>
+
+
+        </section>
+
+        <section class="container about-section">
+          <h2 class="about__title">про нас</h2>
+          <p class="about__brand">Traffic Radar</p>
+          <div class="about">
+            <p class="about__description">молодая, но уже зарекомендовавшая себя</p>
+            <p class="about__description">команда экспертов по iGaming‑трафику.</p>
+            <p class="about__description">Наша задача — превратить ваш поток</p>
+            <p class="about__description">пользователей в устойчивый доход,</p>
+            <p class="about__description">сохраняя прозрачность условий и </p>
+            <p class="about__description">качество офферов</p>
+          </div>
+
+        </section>
+
+      <section class="container about-cards">
+        <div class="about-cards__item">
+          <p class="about-cards__text">Высокие ставки: CPA до $600 / RevShare до 45 %</p>
+          <img src="./img/about-img-1.png" alt="" class="about-cards__image" width="280" height="266">
+        </div>
+        <div class="about-cards__item">
+          <p class="about-cards__text">14 дней Keitaro бесплатно новым веб‑мастерам</p>
+          <img src="./img/about-img-2.png" alt="" class="about-cards__image" width="280" height="266">
+        </div>
+        <div class="about-cards__item">
+          <p class="about-cards__text">Мгновенные выплаты — по запросу или по расписанию</p>
+          <img src="./img/about-img-3.png" alt="" class="about-cards__image" width="280" height="266">
+        </div>
+        <div class="about-cards__item">
+          <p class="about-cards__text">Личный <br> менеджер 24/7</p>
+          <img src="./img/about-img-4.png" alt="" class="about-cards__image" width="280" height="266">
+        </div>
+      </section>
+
+<section class="stats">
+  <div class="stats__header">
+    <h2 class="stats__title">Статистика в цифрах</h2>
+  </div>
+
+  <div class="stats__main">
+    <div class="stats__container">
+      <div class="stats__items">
+        <!-- Item 1 -->
+        <div class="stats__item">
+          <div class="stats__number-container">
+            <svg class="stats__number-svg" width="34" height="200" viewBox="0 0 34 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="stats__bg" fill="#000" d="M1.5 0h31v30h-31z"/>
+              <path class="stats__border" stroke="#1F1F1F" d="M1.5 0h31v30h-31z"/>
+              <path class="stats__number" d="M12.58 26.096v-1.92l3.24-.12V11.744l-3 .216v-1.8l5.16-.96v14.856l2.76.12v1.92l-4.08-.192z" fill="#1F1F1F"/>
+              <path class="stats__line" stroke="#1F1F1F" d="M17.5 30v170"/>
+            </svg>
+          </div>
+          
+          <div class="stats__content-wrapper">
+            <svg class="stats__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="stats__icon-path" d="m22.668 6.389.111 5.94c.054.16.275.198.423.215.501.059 2.553-.116 2.79.072.096.077.1.172.114.284.1.76-.134 1.847-.004 2.57.047.258.302.265.513.284.56.05 1.936.072 2.47 0 .26-.034.322-.095.357-.36.095-.723-.114-1.694.001-2.405.021-.132.114-.348.233-.405.187-.09 2.467-.07 2.68.02a.55.55 0 0 1 .22.18l-.002 9.058c-.111.169-.258.27-.47.247L3.62 22.042c-.168-.112-.267-.26-.245-.474l.046-8.782c.129-.21.246-.226.47-.247.49-.048 1.762-.062 2.234.001.26.035.322.096.357.361.095.722-.114 1.693 0 2.404a.62.62 0 0 0 .234.406h3.02c.097-.055.137-.135.156-.243.134-.72-.1-1.81-.001-2.567.014-.112.018-.208.115-.285.236-.187 2.289-.012 2.79-.07.146-.018.368-.056.422-.216l.051-5.88c.107-.120.248-.144.397-.161.396-.046 1.866-.065 2.223.004.084.016.154.04.209.11l.087 9.132c.06.175.175.198.337.22.897.12 2.078-.082 3.006-.02l.22-.18.09-9.048a.3.3 0 0 1 .143-.177c.162-.08 1.958-.068 2.268-.043.145.012.291.012.414.103zM3.757 25.307l28.418-.012c.26.041.396.18.437.44.062.4.062 1.915 0 2.315s-.326.421-.667.45L3.98 28.497c-.316-.05-.551-.077-.6-.437s-.058-2.07.006-2.408c.038-.199.195-.288.372-.345M3.046 6.389c.90.125.90.272.102.418.045.536.053 1.564.002 2.093-.029.299-.037.397-.359.44-.452.06-1.938.06-2.39 0-.263-.035-.323-.099-.357-.36-.06-.463-.056-1.864-.001-2.334.038-.331.225-.333.517-.36.336-.03 2.347-.038 2.487.103m30.102-.084c.214-.065 2.154-.059 2.45-.02.264.036.324.099.358.361.057.44.057 1.892 0 2.332-.035.266-.098.327-.357.361-.44.059-1.87.058-2.312 0-.267-.034-.403-.174-.437-.44-.055-.43-.048-1.654.002-2.091.021-.182.102-.445.296-.503M16.626.052c.24-.071 2.199-.06 2.531-.02.332.038.33.227.357.521.043.49.052 1.53-.003 2.01-.03.272-.067.41-.354.443-.518.062-1.784.052-2.312 0-.297-.029-.394-.037-.437-.361-.035-.271-.023-2.312.043-2.45a.3.3 0 0 1 .176-.143" fill="#1F1F1F"/>
+            </svg>
+            <div class="stats__content">
+              <p class="stats__count">800+ офферов</p>
+              <p class="stats__description">800+ актуальных и проверенных офферов под любые вертикали и форматы. Доступ к эксклюзиву и топовым продуктам — выбирай, лей, зарабатывай</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="stats__item">
+          <div class="stats__number-container">
+            <svg class="stats__number-svg" width="34" height="200" viewBox="0 0 34 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="stats__bg" fill="#000" d="M1.5 0h31v30h-31z"/>
+              <path class="stats__border" stroke="#1F1F1F" d="M1.5 0h31v30h-31z"/>
+              <path class="stats__number" d="M23.9 22.08V24H10.94v-8.448l10.8-1.2v-5.232H11.18v-1.92h10.8l1.92 1.92v6.84l-10.8 1.2v4.92z" fill="#1F1F1F"/>
+              <path class="stats__line" stroke="#1F1F1F" d="M17.5 30v170"/>
+            </svg>
+          </div>
+          
+          <div class="stats__content-wrapper">
+            <svg class="stats__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="stats__icon-path" d="M15.33 20.818V18.05h1.36c.098-.527.026-1.07.017-1.602 0-.056.033-.122.032-.189-.006-.296-.17-.716.065-.976h1.293V5.58H16.69V2.857c-.28.011-.557-.038-.836-.047-.568-.018-1.28.068-1.819.004-.066-.007-.117-.005-.156-.07V1.406H5.624L5.58 0h8.345v1.36l2.812.046v1.406h1.406v2.767h1.36v9.75h-1.36v2.609l-.068.068h-1.338v2.812c-.468.002-.938-.003-1.406 0q-.002 1.383 0 2.766h-1.36v2.654c0 .015-.06.068-.046.113h-1.36v2.721l-1.362.045-.045 1.361H8.345v-1.406h-1.36V26.42l-.068-.068H5.579v-2.699l-.068-.068H4.218v-2.721H2.812c-.007-.157.011-.318 0-.476-.048-.63-.12-1.608-.048-2.225.008-.066.006-.116.07-.156H4.06c.025 0 .101.07.16.045v2.767h1.405v2.766h1.36v2.767h1.407v2.676l2.766.045v-2.721h1.338l.068-.068v-2.699h1.36v-2.766c.469-.002.939.002 1.407 0" fill="#1F1F1F"/>
+              <path class="stats__icon-path" d="M5.578 33.29c2.766.004 5.535-.003 8.3 0v-1.338l.068-.068h2.699v-2.767h-2.676c.035-.336-.032-.697-.036-1.02-.002-.135.096-.282-.01-.43h2.7l.067.067v1.338h1.406v2.857h-1.36c.013.132-.04.255-.047.384-.02.313.072.711-.067.977h-2.698v1.315c0 .004-.051-.007-.075.017-.023.024-.012.074-.016.074H5.578c.006-.468-.007-.938 0-1.406H2.766v-1.361c-.453.01-.908-.007-1.36 0v-2.812l1.36-.046c.002.952-.003 1.906 0 2.858.033-.001.115-.046.201-.047a59 59 0 0 1 2.615.021c.12.085 0 1.17-.004 1.387m.046-19.457h1.361l.045 1.452h5.488v-1.497h1.406v-5.42l.068-.068h1.338v5.534c-.058-.025-.134.045-.159.045H13.97v1.451h-1.407v1.36H6.985v-1.337l-.068-.068H5.624c-.001-.483.003-.969 0-1.452H4.218V8.369l.068-.068h1.27l.07.157c.003 1.792-.01 3.584-.002 5.376M1.36 5.624H0v9.615h1.36z" fill="#1F1F1F"/>
+              <path class="stats__icon-path" d="M12.563 5.579v1.315l1.36.045V8.3c-.044-.014-.098.046-.113.046h-1.247v-1.36h-5.51c-.014 0-.035-.058-.069-.046v1.406H5.783a.6.6 0 0 1-.205-.113V6.939l1.361-.045V5.6l.068-.068h5.397c.025 0 .101.07.159.046M2.766 15.24v2.743l-.068.068H1.36v-2.744l.068-.068zM5.579 1.406v1.406H2.812c.027-.386-.021-.774-.033-1.158-.002-.073-.01-.199.056-.248zM2.767 2.812H1.384v2.767h1.383zm2.857 24.899H2.812v1.361h2.812z" fill="#1F1F1F"/>
+            </svg>
+            <div class="stats__content">
+              <p class="stats__count">50+ GEO (Tier 1/2/3)</p>
+              <p class="stats__description">Работаем по всему миру: более 50 GEO, включая Tier 1, 2 и 3 регионы. Ты сам выбираешь рынок — мы обеспечиваем результат и выплату</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="stats__item">
+          <div class="stats__number-container">
+                <svg class="stats__number-svg" width="34" height="200" viewBox="0 0 34 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="stats__bg" fill="#000" d="M1.5 0h31v30h-31z"/>
+      <path class="stats__border" stroke="#1F1F1F" d="M1.5 0h31v30h-31z"/>
+      <path class="stats__number" d="M21.26 23.5H10.22v-1.92h10.8v-5.76h-9.36v-1.92h8.88v-5.28H10.46v-1.92h10.32l1.92 1.92v5.064l-1.368 1.032 1.848 1.44v5.424z" fill="#1F1F1F"/>
+      <path class="stats__line" stroke="#1F1F1F" d="M17.5 30v170"/>
+    </svg>
+          </div>
+          
+          <div class="stats__content-wrapper">
+            <svg class="stats__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="stats__icon-path" d="M3.854.038c7.499-.065 15.01.085 22.511.002.188-.002.615-.162.615.17v1.805l2.026.099a8.3 8.3 0 0 0-.051 1.558c.10.13.024.274.125.369h1.952v5.485l1.977.049V19.73c0 .012-.05.116-.084.125l-1.893.097v3.83l-.074.074h-2.001v2.026H1.952l-.074-.074v-1.952L0 23.806V4.263a.36.36 0 0 1 .225-.12c.414-.066 1.013.01 1.427-.057a.36.36 0 0 0 .225-.12V2.088l.074-.074h1.903zm23.027 2.075H3.953v1.928h22.978V2.237c0-.016-.065-.075-.05-.124m2.076 4.052H1.977v17.592c.063-.027.146.05.173.05h26.807v-3.855l-8.351-.05v-2.075H18.58v-6.226c.677.003 1.357.016 2.026-.099V9.6l.074-.074h8.277zm1.976 11.662-.024-6.226H20.655v6.226z" fill="#1F1F1F"/>
+              <path class="stats__icon-path" d="M30.933 17.827H20.654v-6.226h10.254zm-7.882-4.15-.47.123v1.927l.075.074h1.73c.085 0 .32-.121.32-.222V13.75l-.074-.074z" fill="#1F1F1F"/>
+            </svg>
+            <div class="stats__content">
+              <p class="stats__count">160 способов выплат (crypto/SEPA/SWIFT)</p>
+              <p class="stats__description">160 способов вывести заработанное: крипта, SEPA, SWIFT и многое другое. Без ограничений, без ожидания. Только удобство</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="stats__item">
+          <div class="stats__number-container">
+                <svg class="stats__number-svg" width="34" height="200" viewBox="0 0 34 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="stats__bg" fill="#000" d="M1.5 0h31v30h-31z"/>
+      <path class="stats__border" stroke="#1F1F1F" d="M1.5 0h31v30h-31z"/>
+      <path class="stats__number" d="m10.46 19.68.816-12.48h2.064l-.72 10.56h8.64V7.2h2.16V24h-2.16v-4.32z" fill="#1F1F1F"/>
+    </svg>
+          </div>
+          
+          <div class="stats__content-wrapper">
+            <svg class="stats__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="stats__icon-path" d="M17.447 7.5c.023.017-.047.06-.047.07v1.527c0 .038.073.168.056.245a1 1 0 0 0 .109.056h2.073c.014 0 .036-.06.07-.047v2.083h1.58l.07.07v1.828h-2.804l-.07-.07v-1.735h-4.242v3.749h5.42v2.037h1.696v3.91l-.07.07h-1.626v1.99h-2.215l-.07 1.944H15.42l.047-1.944h-2.261v-1.99h-1.768l-.07-.07v-1.966h2.85l.071.069V21.2h4.124l.07-.069v-3.818h-5.372v-1.99h-1.626c-.015 0-.071-.062-.117-.047v-3.842h1.838V9.467l.07-.07h2.12l.071-.069V7.57c0-.013-.06-.035-.047-.069zM22.498 0h-12.27v2.53h12.27zm2.557 2.53h-2.557v2.53h2.557zm2.557 2.53h-2.557v2.53h2.557zm2.558 2.53h-2.558v2.53h2.558zM7.672 5.06h2.557V2.53H7.672zM5.114 7.59h2.558V5.06H5.114zm-2.557 2.53h2.557V7.59H2.557zm22.498 17.2h-2.558v2.53h2.558zm2.557-2.531h-2.557v2.53h2.557zm2.558-2.53h-2.558v2.53h2.558zm-22.498 7.59h2.557v-2.53H7.672zM5.114 27.32l2.558-.001v-2.53H5.114zm-2.557-2.53h2.557v-2.53H2.557zm19.941 5.407h-12.27v2.53h12.27zm10.229-7.937V10.12H30.17v12.139zm-30.17 0V10.12H0v12.139z" fill="#1F1F1F"/>
+            </svg>
+            <div class="stats__content">
+              <p class="stats__count">$944 — средний ежемесячный доход партнёра (по данным сети)</p>
+              <p class="stats__description">Средний доход наших партнёров — $944 в месяц. Цифры говорят сами за себя. Готов выйти на новый уровень?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="offers">
+  <div class="container">
+    <h2 class="offers__title">Топ‑офферы недели</h2>
+
+    <div class="offers__grid">
+      <!-- Карточка 1 -->
+      <div class="offers__card-wrapper">
+        <div class="offers__card">
+          <h3 class="offers__card-title">Brand name</h3>
+          <div class="offers__card-grid">
+            <div class="offers__card-left">
+              <div class="offers__row">
+                <p class="offers__label">Оффер</p>
+              </div>
+              <div class="offers__row">
+                <p class="offers__label">CPA</p>
+              </div>
+              <div class="offers__row">
+                <p class="offers__label">EPC</p>
+              </div>
+            </div>
+            <div class="offers__card-right">
+              <div class="offers__row">
+                <p class="offers__value">#123</p>
+              </div>
+              <div class="offers__row">
+                <p class="offers__value">$450</p>
+              </div>
+              <div class="offers__row">
+                <p class="offers__value">1.9%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Карточка 2 -->
+      <div class="offers__card-wrapper">
+        <div class="offers__card">
+          <h3 class="offers__card-title">Brand name</h3>
+          <div class="offers__card-grid">
+            <div class="offers__card-left">
+              <div class="offers__row">
+                <p class="offers__label">Оффер</p>
+              </div>
+              <div class="offers__row">
+                <p class="offers__label">CPA</p>
+              </div>
+              <div class="offers__row">
+                <p class="offers__label">EPC</p>
+              </div>
+            </div>
+            <div class="offers__card-right">
+              <div class="offers__row">
+                <p class="offers__value">#124</p>
+              </div>
+              <div class="offers__row">
+                <p class="offers__value">$420</p>
+              </div>
+              <div class="offers__row">
+                <p class="offers__value">2.1%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Карточка 3 -->
+      <div class="offers__card-wrapper">
+        <div class="offers__card">
+          <h3 class="offers__card-title">Brand name</h3>
+          <div class="offers__card-grid">
+            <div class="offers__card-left">
+              <div class="offers__row">
+                <p class="offers__label">Оффер</p>
+              </div>
+              <div class="offers__row">
+                <p class="offers__label">CPA</p>
+              </div>
+              <div class="offers__row">
+                <p class="offers__label">EPC</p>
+              </div>
+            </div>
+            <div class="offers__card-right">
+              <div class="offers__row">
+                <p class="offers__value">#125</p>
+              </div>
+              <div class="offers__row">
+                <p class="offers__value">$380</p>
+              </div>
+              <div class="offers__row">
+                <p class="offers__value">1.8%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Карточка 4 -->
+      <div class="offers__card-wrapper">
+        <div class="offers__card">
+          <h3 class="offers__card-title">Brand name</h3>
+          <div class="offers__card-grid">
+            <div class="offers__card-left">
+              <div class="offers__row">
+                <p class="offers__label">Оффер</p>
+              </div>
+              <div class="offers__row">
+                <p class="offers__label">CPA</p>
+              </div>
+              <div class="offers__row">
+                <p class="offers__label">EPC</p>
+              </div>
+            </div>
+            <div class="offers__card-right">
+              <div class="offers__row">
+                <p class="offers__value">#126</p>
+              </div>
+              <div class="offers__row">
+                <p class="offers__value">$410</p>
+              </div>
+              <div class="offers__row">
+                <p class="offers__value">2.0%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-block">
+  <p class="cta-block__title">Готов зарабатывать с нами?</p>
+  <p class="cta-block__description">Присоединяйся к нашим партнёрам — выбирай оффер, заливай трафик и получай свои выплаты. Свяжись с нами, чтобы стартовать!</p>
+  <a href="https://trafficradar.affise.com/v2/sign/up" class="hero__cta">
+    Стать партнером
+    <svg class="cta-block__icon" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="cta-block__icon-path" fill="#fff" d="M26.61 27.222V9.444h4.444v17.778zM13.277 9.444H26.61v4.444H13.277zm8.889 4.445h4.444v4.444h-4.444zm-4.444 4.444h4.444v4.444h-4.444zm-4.445 4.445h4.444v4.444h-4.444zm-4.444 4.444h4.444v4.444H8.833z"/>
+    </svg>
+  </a>
+</div>
+  </div>
+</section>
+
+
+<section class="instruments container">
+  <h2 class="instruments__title">Инструменты</h2>
+  <div class="instruments__grid">
+    <img class="instruments__item" src="./img/instrument-img-1.webp" alt="Инструмент 1">
+    <img class="instruments__item" src="./img/instrument-img-2.webp" alt="Инструмент 2">
+    <img class="instruments__item" src="./img/instrument-img-3.webp" alt="Инструмент 3">
+    <img class="instruments__item" src="./img/instrument-img-4.webp" alt="Инструмент 4">
+    <img class="instruments__item" src="./img/instrument-img-5.webp" alt="Инструмент 5">
+    <img class="instruments__item" src="./img/instrument-img-6.webp" alt="Инструмент 6">
+  </div>
+
+    <div class="calculator">
+        <h2 class="calculator-title">Калькулятор доходности</h2>
+        <div class="form-group">
+            <select id="country">
+                <option value="">Выберите страну</option>
+                <optgroup label="Tier 1">
+                    <option value="germany">Германия</option>
+                    <option value="uk">Великобритания</option>
+                    <option value="canada">Канада</option>
+                    <option value="australia">Австралия</option>
+                    <option value="norway">Норвегия</option>
+                    <option value="sweden">Швеция</option>
+                    <option value="netherlands">Нидерланды</option>
+                    <option value="finland">Финляндия</option>
+                    <option value="switzerland">Швейцария</option>
+                    <option value="belgium">Бельгия</option>
+                    <option value="france">Франция</option>
+                    <option value="ireland">Ирландия</option>
+                </optgroup>
+                <optgroup label="Tier 2">
+                    <option value="poland">Польша</option>
+                    <option value="spain">Испания</option>
+                    <option value="italy">Италия</option>
+                    <option value="portugal">Португалия</option>
+                    <option value="czech">Чехия</option>
+                    <option value="hungary">Венгрия</option>
+                    <option value="romania">Румыния</option>
+                    <option value="greece">Греция</option>
+                    <option value="slovakia">Словакия</option>
+                    <option value="croatia">Хорватия</option>
+                    <option value="bulgaria">Болгария</option>
+                    <option value="slovenia">Словения</option>
+                    <option value="latvia">Латвия</option>
+                    <option value="lithuania">Литва</option>
+                    <option value="estonia">Эстония</option>
+                </optgroup>
+                <optgroup label="Tier 3">
+                    <option value="ukraine">Украина</option>
+                    <option value="kazakhstan">Казахстан</option>
+                    <option value="india">Индия</option>
+                    <option value="pakistan">Пакистан</option>
+                    <option value="philippines">Филиппины</option>
+                    <option value="indonesia">Индонезия</option>
+                    <option value="vietnam">Вьетнам</option>
+                    <option value="thailand">Таиланд</option>
+                    <option value="mexico">Мексика</option>
+                    <option value="brazil">Бразилия</option>
+                    <option value="argentina">Аргентина</option>
+                    <option value="colombia">Колумбия</option>
+                    <option value="turkey">Турция</option>
+                    <option value="egypt">Египет</option>
+                    <option value="morocco">Марокко</option>
+                    <option value="nigeria">Нигерия</option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="form-group">
+            <select id="traffic-source">
+                <option value="">Выберите источник трафика</option>
+                <option value="facebook">Facebook/TikTok</option>
+                <option value="google">Google Ads/UAC</option>
+                <option value="seo">SEO</option>
+                <option value="push">Push/Pop</option>
+                <option value="aso">ASO/APK</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="number" id="deposits" min="0" placeholder="Сколько депозитов вы ожидаете?">
+        </div>
+        <div id="result" class="result hidden">
+            Ожидаемая выплата: <span id="payout">0$</span> 
+        </div>
+    </div>
+</section>
+
+<section class="bonuses container">
+      <h2 class="bonuses__title">Бонусы</h2>
+  <div class="bonuses__container container">
+    
+    <div class="bonuses__content">
+      <div class="bonuses__program">
+        <p class="bonuses__program-text">Бонусная программа</p>
+      </div>
+
+      <div class="bonuses__offer">
+        <p class="bonuses__offer-text">Получите до $500 бонусного баланса за первый депозит трафика</p>
+        <p class="bonuses__offer-note">Бонусы начисляются автоматически и доступны к выводу после первой выплаты</p>
+        <a href="https://trafficradar.affise.com/v2/sign/up" class="hero__cta bonuses__cta">
+          ПОЛУЧИТЬ БОНУС
+          <svg class="button__icon" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#fff" d="M26.61 27.222V9.444h4.444v17.778zM13.277 9.444H26.61v4.444H13.277zm8.889 4.445h4.444v4.444h-4.444zm-4.444 4.444h4.444v4.444h-4.444zm-4.445 4.445h4.444v4.444h-4.444zm-4.444 4.444h4.444v4.444H8.833z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    </main>
+
+    <script src="./js/language-switcher.js"></script>
+    <script src="./js/navbar-select.js"></script>
+    <script src="./js/burger-menu.js"></script>
+    <script src="./js/case.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/calculator.js"></script>
+
+
+</body>
+</html>
