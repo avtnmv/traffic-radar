@@ -1,4 +1,4 @@
-
+console.log('Script loaded!');
         const countryData = {
             // Tier 1
             germany: { facebook: [109, 158], google: [122, 183], seo: [146, 219], push: [61, 97], aso: [97, 146] },

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Mono:wght@100..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -16,11 +17,11 @@
         <a href="#" class="logo"><img src="./img/logo.webp" alt="logo" width="138px" height="48px"></a>
         <nav class="navbar">
             <ul class="nav-list">
-                <li><a href="" data-i18n="about" >Про нас</a></li>
-                <li><a href="" data-i18n="offers">Топ офферы</a></li>
-                <li><a href="" data-i18n="tools">Инструменты</a></li>
-                <li><a href="" data-i18n="bonuses">Бонусы</a></li>
-                <li><a href="" data-i18n="reviews">Отзывы</a></li>
+                <li><a href="#about" data-i18n="about" >Про нас</a></li>
+                <li><a href="#offers" data-i18n="offers">Топ офферы</a></li>
+                <li><a href="#instruments" data-i18n="tools">Инструменты</a></li>
+                <li><a href="#bonuses" data-i18n="bonuses">Бонусы</a></li>
+                <li><a href="#reviews" data-i18n="reviews">Отзывы</a></li>
                 <li><a href="" data-i18n="contacts">Контакты</a></li>
             </ul>
 
@@ -46,11 +47,11 @@
 
     <div class="burger-menu" id="burger-menu">
         <ul>
-            <li><a href="" data-i18n="about" >Про нас</a></li>
-            <li><a href="" data-i18n="offers">Топ офферы</a></li>
-            <li><a href="" data-i18n="tools">Инструменты</a></li>
-            <li><a href="" data-i18n="bonuses">Бонусы</a></li>
-            <li><a href="" data-i18n="reviews">Отзывы</a></li>
+            <li><a href="#about" data-i18n="about" >Про нас</a></li>
+            <li><a href="#offers" data-i18n="offers">Топ офферы</a></li>
+            <li><a href="#instruments" data-i18n="tools">Инструменты</a></li>
+            <li><a href="#bonuses" data-i18n="bonuses">Бонусы</a></li>
+            <li><a href="#reviews" data-i18n="reviews">Отзывы</a></li>
             <li><a href="" data-i18n="contacts">Контакты</a></li>
         </ul>
 
@@ -223,6 +224,7 @@
 
         </section>
 
+        <a name="about"></a>
         <section class="container about-section">
           <h2 class="about__title">про нас</h2>
           <p class="about__brand">Traffic Radar</p>
@@ -358,6 +360,7 @@
   </div>
 </section>
 
+<a name="offers"></a>
 <section class="offers">
   <div class="container">
     <h2 class="offers__title">Топ‑офферы недели</h2>
@@ -501,7 +504,7 @@
   </div>
 </section>
 
-
+<a name="instruments"></a>
 <section class="instruments container">
   <h2 class="instruments__title">Инструменты</h2>
   <div class="instruments__grid">
@@ -588,6 +591,7 @@
     </div>
 </section>
 
+<a name="bonuses"></a>
 <section class="bonuses container">
       <h2 class="bonuses__title">Бонусы</h2>
   <div class="bonuses__container container">
@@ -611,16 +615,284 @@
   </div>
 </section>
 
+<a name="reviews"></a>
+    <section class="container reviews">
+      <h2 class="reviews-title">Отзывы</h2>
+      
+      <div class="swiper-container reviews-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide">
+                    <div class="stars">
+                        <img src="./img/stars.webp" alt="stars">
+                    </div>
+                    <div class="text">
+                      Конверт по офферам в Tier-2 стабильно держится выше 2%. Плюс дают быстрый фидбэк по креативам и трафику
+                    </div>
+                    <div class="author">
+                        <img src="./img/review-one.webp" alt="Author" class="author-img">
+                        <div class="author-name">Саша Загородний</div>
+                    </div>
+                </div>
+                
+            </div>
 
+            <div class="swiper-slide">
+                <div class="slide">
+                    <div class="stars">
+                        <img src="./img/stars.webp" alt="stars">
+                    </div>
+                    <div class="text">
+                      Traffic Radar - отличная команда. Отвечают всегда во время и реально помогают. Был технический вопрос по трекеру — решили всё за 10 минут. Для меня это показатель, что здесь ценят отношения, а не только цифры
+                    </div>
+                    <div class="author">
+                        <img src="./img/review-two.webp" alt="Author" class="author-img">
+                        <div class="author-name">Никита Иванчук</div>
+                        <button class="read-more">Читати далi...</button>
+                    </div>
+                </div>
+            </div>
+
+              <div class="swiper-slide">
+                <div class="slide">
+                    <div class="stars">
+                        <img src="./img/stars.webp" alt="stars">
+                    </div>
+                    <div class="text">
+                      Ставки на офферах — реально боевые. Конверт по гэмбле — огонь. Лью на Tier‑1 и Tier‑2 — всё прозрачно, без сливов и странных апрувов. Если нужен уверенный доход — это ваш вариант. Уже советовал ребятам из команды
+                    </div>
+                    <div class="author">
+                        <img src="./img/review-three.webp" alt="Author" class="author-img">
+                        <div class="author-name">Ярослав Мельник</div>
+                        <button class="read-more">Читати далi...</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="slide">
+                    <div class="stars">
+                        <img src="./img/stars.webp" alt="stars">
+                    </div>
+                    <div class="text">
+                      Первый месяц — и уже в плюсе. Делал такие же объёмы, как раньше, а заработал почти в два раза больше. Разница — в подходе и реальных ставках. Здесь действительно выгодно работать, а не “просто лить” ради галочки
+                    </div>
+                    <div class="author">
+                        <img src="./img/review-four.webp" alt="Author" class="author-img">
+                        <div class="author-name">Кирилл Павленко</div>
+                        <button class="read-more">Читати далi...</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="slide">
+                    <div class="stars">
+                        <img src="./img/stars.webp" alt="stars">
+                    </div>
+                    <div class="text">
+                      Люблю, когда всё по делу: понятные отчёты, чёткий апрув, прозрачные условия. Плюс — калькулятор выплат прям спасает. Видно, что ребята заморачиваются не ради лоска, а чтобы реально было удобно
+                    </div>
+                    <div class="author">
+                        <img src="./img/review-five.webp" alt="Author" class="author-img">
+                        <div class="author-name">Дмитрий Карамаш</div>
+                        <button class="read-more">Читати далi...</button>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="slide">
+                    <div class="stars">
+                        <img src="./img/stars.webp" alt="stars">
+                    </div>
+                    <div class="text">
+                      Сначала просто тестировал пару офферов — сейчас лью в постоянку. Адекватный холд, вменяемый подход, хорошие бренды в каталоге. Главное — доверие. А тут с этим всё ок. Остался — и не жалею
+                    </div>
+                    <div class="author">
+                        <img src="./img/review-six.webp" alt="Author" class="author-img">
+                        <div class="author-name">Сергей Казак</div>
+                        <button class="read-more">Читати далi...</button>
+                    </div>
+                </div>
+                
+            </div>
+
+                <div class="swiper-slide">
+                <div class="slide">
+                    <div class="stars">
+                        <img src="./img/stars.webp" alt="stars">
+                    </div>
+                    <div class="text">
+                      Сотрудничаю с Traffic Radar уже 5 месяцев и доволен. Апрув выше, чем в других сетях, а выплаты стабильно по пятницам, без задержек
+                    </div>
+                    <div class="author">
+                        <img src="./img/review-seven.webp" alt="Author" class="author-img">
+                        <div class="author-name">Давид Чубаев</div>
+                        <button class="read-more">Читати далi...</button>
+                    </div>
+                </div>
+                
+            </div>
+    </div>
+
+        <div class="swiper-controls">
+            <div class="swiper-progress-container">
+                <div class="swiper-progress-bar"></div>
+            </div>
+            
+            <div class="swiper-nav-buttons">
+                <button class="swiper-nav-button custom-prev">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#2D3533" d="M6.272 11.09H4.454v1.818h1.818zM8.09 9.273H6.272v1.818H8.09zm9.092 9.091H19v1.818h-1.818zM9.91 7.455H8.092v1.818H9.91zm5.453 9.09h1.818v1.818h-1.818zM11.727 5.636H9.909v1.818h1.818zm1.819 9.091h1.818v1.818h-1.818zm0-10.909h-1.818v1.818h1.818zM17.182 2h-3.636v1.818h3.636zm0 18.182h-3.636V22h3.636zm-5.455-7.273h1.818v1.818h-1.818zm0-1.819H9.909v1.818h1.818zm1.819-1.817h-1.818v1.818h1.818zm-1.819 9.091h1.818v1.818h-1.818zm3.636-10.909h-1.818v1.818h1.818zm-5.454 9.09h1.818v1.818H9.909zm7.273-10.909h-1.818v1.818h1.818zm-9.091 9.091h1.818v1.818H8.091zM19 3.818h-1.818v1.818H19zM6.272 12.909H8.09v1.818H6.272z"/></svg>
+                </button>
+                <button class="swiper-nav-button custom-next">  
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#2D3533" d="M17.727 11.091h1.818v1.818h-1.818zm-1.818-1.818h1.818v1.818h-1.818zm-9.091 9.091H5v1.818h1.818zm7.273-10.909h1.818v1.818h-1.818zm-5.454 9.09H6.819v1.818h1.818zm3.636-10.909h1.818v1.818h-1.818zm-1.819 9.091H8.636v1.818h1.818zm0-10.909h1.818v1.818h-1.818zM6.818 2h3.636v1.818H6.818zm0 18.182h3.636V22H6.818zm5.455-7.272h-1.818v1.818h1.818zm0-1.819h1.818v1.818h-1.818zm-1.819-1.818h1.818v1.818h-1.818zm1.819 9.091h-1.818v1.818h1.818zM8.637 7.455h1.818v1.818H8.637zm5.453 9.09h-1.818v1.818h1.818zM6.818 5.636h1.818v1.818H6.818zm9.092 9.091h-1.818v1.818h1.818zM5 3.818h1.818v1.818H5z"/><path fill="#2D3533" d="M17.727 12.91h-1.818v1.818h1.818z"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+      <section class="container">
+        <h2 class="how-start-title">Как начать?</h2>
+        <div class="about-cards">
+          <div class="about-cards__item">
+          <p class="about-cards__text">Зарегистрируйтесь</p>
+          <img src="./img/how-start-first.webp" alt="" class="about-cards__image" width="280" height="266">
+        </div>
+        <div class="about-cards__item">
+          <p class="about-cards__text">Получите доступ к офферам</p>
+          <img src="./img/how-start-second.webp" alt="" class="about-cards__image" width="280" height="266">
+        </div>
+        <div class="about-cards__item">
+          <p class="about-cards__text">Получайте выплаты без задержек</p>
+          <img src="./img/how-start-third.webp" alt="" class="about-cards__image" width="280" height="266">
+        </div>
+        <div class="about-cards__item how-start-center">
+          <img src="./img/how-start-fourth.png" alt="" class="about-cards__image about-cards__image2" width="280" height="266">
+        </div>
+        </div>
+      </section>
+
+      <section class="container faq">
+        <h2 class="faq-title">FAQ</h2>
+          <div class="accordion">
+          <div class="items">
+          <div class="accordion__item">
+						<div class="accordion__header" data-toggle="#faq1"><span class="accordion-number">01</span>Какие вертикали у вас?</div>
+						<div class="accordion__content" id="faq1">
+              <p>Гемблинг/Беттинг</p>
+						</div>
+					</div>
+
+					<div class="accordion__item">
+						<div class="accordion__header" data-toggle="#faq2"><span class="accordion-number">02</span>Какой минимальный payout?</div>
+						<div class="accordion__content" id="faq2">
+							<p>От 30$</p>
+						
+						</div>
+					</div>
+          </div>
+
+
+          <div class="items">
+            					<div class="accordion__item">
+						<div class="accordion__header" data-toggle="#faq3"><span class="accordion-number">03</span>Поддерживаете ли вы FB‑Ads?</div>
+						<div class="accordion__content" id="faq3">
+							<p>Принимаем FB‑Ads и другие источники трафика</p>
+							
+						</div>
+					</div>
+
+          <div class="accordion__item">
+						<div class="accordion__header" data-toggle="#faq4"><span class="accordion-number">04</span>Есть ли реферальная программа?</div>
+						<div class="accordion__content" id="faq4">
+							<p>Да, 3% дохода от рефа 4 месяца</p>
+							
+						</div>
+					</div>
+          </div>
+
+          <div class="items">
+                      <div class="accordion__item">
+						<div class="accordion__header" data-toggle="#faq5"><span class="accordion-number">05</span>Сколько длится холд и как часто выплаты?</div>
+						<div class="accordion__content" id="faq5">
+							<p>Зависит от оговоренных условий с рекламодателем - но командам крупным платит компания, не ожидая выплаты от рекламодателя</p>
+							
+						</div>
+					</div>
+
+          <div class="accordion__item">
+						<div class="accordion__header" data-toggle="#faq6"><span class="accordion-number">06</span>Как быстро мне назначат менеджера после регистрации?</div>
+						<div class="accordion__content" id="faq6">
+							<p>Моментально. Менеджер свяжется с тобой сразу после регистрации и поможет запуститься без лишней волокиты</p>
+							
+						</div>
+					</div>
+          </div>
+
+                    <div class="items">
+                      <div class="accordion__item">
+						<div class="accordion__header" data-toggle="#faq7"><span class="accordion-number">07</span>Какие способы выплат вы поддерживаете?</div>
+						<div class="accordion__content" id="faq7">
+							<p>Крипта, Банк</p>
+							
+						</div>
+					</div>
+
+          <div class="accordion__item">
+						<div class="accordion__header" data-toggle="#faq8"><span class="accordion-number">08</span>Предоставляете ли вы креативы или лендинги?</div>
+						<div class="accordion__content" id="faq8">
+							<p>Не предоставляем креативы, но есть партнеры, которые могут предоставить, также лендинги даем от брендов казино </p>
+							
+						</div>
+					</div>
+          </div>
+
+                    <div class="items">
+                      <div class="accordion__item">
+						<div class="accordion__header" data-toggle="#faq9"><span class="accordion-number">09</span>Есть ли возврат отрицательного баланса?</div>
+						<div class="accordion__content" id="faq9">
+							<p>Зависит от условий с рекламодателем</p>
+							
+						</div>
+					</div>
+
+          <div class="accordion__item">
+						<div class="accordion__header" data-toggle="#faq10"><span class="accordion-number">10</span>Могу ли я лить с трекера Keitaro или другого?</div>
+						<div class="accordion__content" id="faq10">
+							<p>Да, мы полностью поддерживаем работу с Keitaro и другими популярными трекерами. Интеграция быстрая и простая — при необходимости поможем всё настроить.</p>
+							
+						</div>
+					</div>
+          </div>
+
+				</div>
+      </section>
+
+      <section class="container traffic-container">
+        <div class="traffic">
+                  <h2>Готовы монетизировать свой трафик эффективнее?</h2>
+                    <a href="https://trafficradar.affise.com/v2/sign/up" class="hero__cta">
+                Стать партнером
+                
+                <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M26.61 27.222V9.444h4.444v17.778zM13.277 9.444H26.61v4.444H13.277zm8.889 4.445h4.444v4.444h-4.444zm-4.444 4.444h4.444v4.444h-4.444zm-4.445 4.445h4.444v4.444h-4.444zm-4.444 4.444h4.444v4.444H8.833z"/></svg>
+            </a>
+        </div>
+
+        <div>        <img src="./img/pre-footer-img.webp" alt="image" class="pre-footer-img"></div>
+      </section>
     </main>
 
+    <script src="./js/calculator.js"></script>
     <script src="./js/language-switcher.js"></script>
     <script src="./js/navbar-select.js"></script>
     <script src="./js/burger-menu.js"></script>
     <script src="./js/case.js"></script>
     <script src="./js/animation.js"></script>
-    <script src="./js/calculator.js"></script>
-
-
-</body>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      </body>
 </html>
