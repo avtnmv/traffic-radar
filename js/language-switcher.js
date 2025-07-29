@@ -189,7 +189,7 @@
       paid: 'Paid',
       minute1: "minute ago",
       minute2: "minutes ago",
-      minute3: "minutes ago" // для 5-20, 25-30 и т.д.
+      minute3: "minutes ago" 
     },
     ru: {
       about: "Про нас",
@@ -380,8 +380,9 @@
       invoice: 'Инвойс',
       paid: 'Оплачено',
       minute1: "минуту назад",
-      minute2: "минуты назад",
-      minute3: "минут назад"
+minute2: "минуты назад",
+minute3: "минут назад"
+
     },
     ua: {
       about: "Про нас",
@@ -572,8 +573,8 @@
       invoice: 'Iнвойс',
       paid: 'Оплачено',
       minute1: "хвилину тому",
-      minute2: "хвилини тому",
-      minute3: "хвилин тому"
+minute2: "хвилини тому",
+minute3: "хвилин тому"
       
     }
   };
@@ -593,38 +594,29 @@
   });
 
   function setLanguage(lang) {
-    localStorage.setItem('lang', lang);
-    currentLangText.textContent = lang.toUpperCase();
-    switcher.classList.remove('open');
-
     document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (translations[lang][key]) {
-            el.textContent = translations[lang][key];
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang][key]) {
+        if (el.tagName === 'OPTGROUP') {
+          el.label = translations[lang][key];
+        } else {
+      el.textContent = translations[lang][key];
         }
+      }
     });
 
-    function initTextFillEffect() {
-      const descriptions = document.querySelectorAll('.about__description');
-      if (!descriptions.length) return;
-  
-      descriptions.forEach(desc => {
-          const text = desc.textContent;
-          desc.innerHTML = '';
-  
-          for (const char of text) {
-              const span = document.createElement('span');
-              span.textContent = char;
-              span.style.color = '#505050';
-              span.style.transition = 'color 0.3s ease';
-              desc.appendChild(span);
-          }
-      });
+    // Handle placeholder translations
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      if (translations[lang][key]) {
+        el.placeholder = translations[lang][key];
+      }
+    });
 
+    currentLangText.textContent = lang.toUpperCase();
+    localStorage.setItem('lang', lang);
+    switcher.classList.remove('open');
   }
-    const minutes = parseInt(document.getElementById('timeText').textContent) || generateRandomMinutes();
-    updateTimeText(minutes);
-}
 
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
