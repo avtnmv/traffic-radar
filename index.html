@@ -9,6 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Mono:wght@100..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
 
+    <link rel="icon" type="image/png" href="./img/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+<link rel="shortcut icon" href="./img/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png" />
+<link rel="manifest" href="./img/site.webmanifest" />
+
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -17,7 +24,7 @@
         <a href="#" class="logo"><img src="./img/logo.webp" alt="logo" width="138px" height="48px"></a>
         <nav class="navbar">
             <ul class="nav-list">
-                <li><a href="#about" data-i18n="about" >Про нас</a></li>
+                <li><a href="#about" data-i18n="about">Про нас</a></li>
                 <li><a href="#offers" data-i18n="offers">Топ офферы</a></li>
                 <li><a href="#instruments" data-i18n="tools">Инструменты</a></li>
                 <li><a href="#bonuses" data-i18n="bonuses">Бонусы</a></li>
@@ -47,7 +54,7 @@
 
     <div class="burger-menu" id="burger-menu">
         <ul>
-            <li><a href="#about" data-i18n="about" >Про нас</a></li>
+            <li><a href="#about" data-i18n="about">Про нас</a></li>
             <li><a href="#offers" data-i18n="offers">Топ офферы</a></li>
             <li><a href="#instruments" data-i18n="tools">Инструменты</a></li>
             <li><a href="#bonuses" data-i18n="bonuses">Бонусы</a></li>
@@ -74,27 +81,27 @@
     <main class="container">
         <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__title">TRAFFIC RADAR</h1>
-            <p class="hero__subtitle">ваша партнёрская сеть в iGaming</p>
+            <h1 class="hero__title" data-i18n="heroTitle">TRAFFIC RADAR</h1>
+            <p class="hero__subtitle"  data-i18n="web">ваша партнёрская сеть в iGaming</p>
 
             <div class="hero__features">
             <div class="hero__feature">
                 <img src="./img/hero-icon-first.webp" alt="icon" class="hero__feature-icon" width="45" height="45">
-                <p class="hero__feature-text">CPA <br> до $600</p>
+                <p class="hero__feature-text" data-i18n="heroText1">CPA <br> до $600</p>
             </div>
 
             <div class="hero__feature">
                 <img src="./img/hero-icon-second.webp" alt="icon" class="hero__feature-icon" width="45" height="45">
-                <p class="hero__feature-text">800+ эксклюзивных <br> офферов</p>
+                <p class="hero__feature-text" data-i18n="heroText2">800+ эксклюзивных <br> офферов</p>
             </div>
 
             <div class="hero__feature">
                 <img src="./img/hero-icon-third.webp" alt="icon" class="hero__feature-icon" width="45" height="45">
-                <p class="hero__feature-text">Выплаты <br> от $30 </p>
+                <p class="hero__feature-text" data-i18n="heroText3">Выплаты <br> от $30 </p>
             </div>
             </div>
 
-            <a href="https://trafficradar.affise.com/v2/sign/up" class="hero__cta">
+            <a href="https://trafficradar.affise.com/v2/sign/up" class="hero__cta" data-i18n="partner">
                 Стать партнером
                 
                 <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M26.61 27.222V9.444h4.444v17.778zM13.277 9.444H26.61v4.444H13.277zm8.889 4.445h4.444v4.444h-4.444zm-4.444 4.444h4.444v4.444h-4.444zm-4.445 4.445h4.444v4.444h-4.444zm-4.444 4.444h4.444v4.444H8.833z"/></svg>
@@ -119,15 +126,15 @@
       &times;
     </button>
 
-    <h2>Бонусна програма Traffic Radar</h2>
-    <p class="modal-subtitle">(V2 – Hybrid + Fun + Value)</p>
+    <h2 data-i18n="bonusProgramTitle">Бонусна програма Traffic Radar</h2>
+    <p class="modal-subtitle" data-i18n="bonusProgramSubtitle">(V2 – Hybrid + Fun + Value)</p>
 
     <div class="accordion">
       <div class="accordion-item">
         <div class="accordion-item__card">
           <div class="accordion-item__header">
             <img src="./img/accordion-icon-1.webp" alt="">
-            <h3>+$50 за відгук на LinkedIn</h3>
+            <h3 data-i18n="bonusLinkedinTitle">+$50 за відгук на LinkedIn</h3>
             <button class="accordion-toggle" aria-label="Toggle">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <path d="M8.768 10.91 16 18.1l7.233-7.192 2.222 2.214L16 22.545l-9.454-9.422z" fill="#fff"/>
@@ -135,7 +142,7 @@
             </button>
           </div>
           <div class="accordion-item__body">
-            <p>Залиш відгук про співпрацю з Traffic Radar на LinkedIn — і отримай +50$ до виплати</p>
+            <p data-i18n="bonusLinkedinDesc">Залиш відгук про співпрацю з Traffic Radar на LinkedIn — і отримай +50$ до виплати</p>
           </div>
         </div>
       </div>
@@ -144,7 +151,7 @@
         <div class="accordion-item__card">
           <div class="accordion-item__header">
             <img src="./img/accordion-icon-2.webp" alt="">
-            <h3>Підвищена ставка на 3 дні</h3>
+            <h3 data-i18n="bonusRateTitle">Підвищена ставка на 3 дні</h3>
             <button class="accordion-toggle" aria-label="Toggle">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <path d="M8.768 10.91 16 18.1l7.233-7.192 2.222 2.214L16 22.545l-9.454-9.422z" fill="#fff"/>
@@ -152,7 +159,7 @@
             </button>
           </div>
           <div class="accordion-item__body">
-            <p>Активується в разі приросту FTD або за ініціативою AM для мотивації</p>
+            <p data-i18n="bonusRateDesc">Активується в разі приросту FTD або за ініціативою AM для мотивації</p>
           </div>
         </div>
       </div>
@@ -161,7 +168,7 @@
         <div class="accordion-item__card">
           <div class="accordion-item__header">
             <img src="./img/accordion-icon-3.webp" alt="">
-            <h3>Купон Keitaro на 1 місяць + допомога в налаштуванні</h3>
+            <h3 data-i18n="bonusKeitaroTitle">Купон Keitaro на 1 місяць + допомога в налаштуванні</h3>
             <button class="accordion-toggle" aria-label="Toggle">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <path d="M8.768 10.91 16 18.1l7.233-7.192 2.222 2.214L16 22.545l-9.454-9.422z" fill="#fff"/>
@@ -169,7 +176,7 @@
             </button>
           </div>
           <div class="accordion-item__body">
-            <p>Після 10 FTD або тест-капи — безкоштовний промокод + AM допомагає налаштувати</p>
+            <p data-i18n="bonusKeitaroDesc">Після 10 FTD або тест-капи — безкоштовний промокод + AM допомагає налаштувати</p>
           </div>
         </div>
       </div>
@@ -178,7 +185,7 @@
         <div class="accordion-item__card">
           <div class="accordion-item__header">
             <img src="./img/accordion-icon-4.webp" alt="">
-            <h3>П’ятнична Рулетка — “Free Spins”</h3>
+            <h3 data-i18n="bonusRouletteTitle">П'ятнична Рулетка — "Free Spins"</h3>
             <button class="accordion-toggle" aria-label="Toggle">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <path d="M8.768 10.91 16 18.1l7.233-7.192 2.222 2.214L16 22.545l-9.454-9.422z" fill="#fff"/>
@@ -186,7 +193,7 @@
             </button>
           </div>
           <div class="accordion-item__body">
-            <p>Кожної п’ятниці активним вебам пропонується обертання рулетки</p>
+            <p data-i18n="bonusRouletteDesc">Кожної п'ятниці активним вебам пропонується обертання рулетки</p>
           </div>
         </div>
       </div>
@@ -195,7 +202,7 @@
   <div class="accordion-item__card no-border">
     <div class="accordion-item__header header-stacked">
       <div class="header-top">
-        <h3>На П’ятничній рулетці призи можуть бути:</h3>
+        <h3 data-i18n="bonusRoulettePrizesTitle">На П'ятничній рулетці призи можуть бути:</h3>
       </div>
       <button class="accordion-toggle" aria-label="Toggle">
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -206,12 +213,12 @@
 
     <div class="accordion-item__body">
       <ul class="bonus-list custom-icons">
-        <li>+30% до депозита (на виплату)</li>
-        <li>Купон Keitaro 1 місяць</li>
-        <li>Мерч Traffic Radar (футболка/худі/кепка)</li>
-        <li>10$–50$ у крипті</li>
-        <li>"Пролітай" — елемент азарту</li>
-        <li>Кешбек 10% від пролитого трафіку</li>
+        <li data-i18n="bonusRoulettePrize1">+30% до депозита (на виплату)</li>
+        <li data-i18n="bonusRoulettePrize2">Купон Keitaro 1 місяць</li>
+        <li data-i18n="bonusRoulettePrize3">Мерч Traffic Radar (футболка/худі/кепка)</li>
+        <li data-i18n="bonusRoulettePrize4">10$–50$ у крипті</li>
+        <li data-i18n="bonusRoulettePrize5">"Пролітай" — елемент азарту</li>
+        <li data-i18n="bonusRoulettePrize6">Кешбек 10% від пролитого трафіку</li>
       </ul>
     </div>
   </div>
@@ -226,41 +233,41 @@
 
         <a name="about"></a>
         <section class="container about-section">
-          <h2 class="about__title">про нас</h2>
-          <p class="about__brand">Traffic Radar</p>
+          <h2 class="about__title" data-i18n="aboutTitle">про нас</h2>
+          <p class="about__brand" data-i18n="aboutBrand">Traffic Radar</p>
           <div class="about">
-            <p class="about__description">молодая, но уже зарекомендовавшая себя</p>
-            <p class="about__description">команда экспертов по iGaming‑трафику.</p>
-            <p class="about__description">Наша задача — превратить ваш поток</p>
-            <p class="about__description">пользователей в устойчивый доход,</p>
-            <p class="about__description">сохраняя прозрачность условий и </p>
-            <p class="about__description">качество офферов</p>
+            <p class="about__description" data-i18n="aboutDesc1">молодая, но уже зарекомендовавшая себя</p>
+            <p class="about__description" data-i18n="aboutDesc2">команда экспертов по iGaming‑трафику.</p>
+            <p class="about__description" data-i18n="aboutDesc3">Наша задача — превратить ваш поток</p>
+            <p class="about__description" data-i18n="aboutDesc4">пользователей в устойчивый доход,</p>
+            <p class="about__description" data-i18n="aboutDesc5">сохраняя прозрачность условий и </p>
+            <p class="about__description" data-i18n="aboutDesc6">качество офферов</p>
           </div>
 
         </section>
 
       <section class="container about-cards">
         <div class="about-cards__item">
-          <p class="about-cards__text">Высокие ставки: CPA до $600 / RevShare до 45 %</p>
+          <p class="about-cards__text" data-i18n="aboutCard1">Высокие ставки: CPA до $600 / RevShare до 45 %</p>
           <img src="./img/about-img-1.png" alt="" class="about-cards__image" width="280" height="266">
         </div>
         <div class="about-cards__item">
-          <p class="about-cards__text">14 дней Keitaro бесплатно новым веб‑мастерам</p>
+          <p class="about-cards__text" data-i18n="aboutCard2">14 дней Keitaro бесплатно новым веб‑мастерам</p>
           <img src="./img/about-img-2.png" alt="" class="about-cards__image" width="280" height="266">
         </div>
         <div class="about-cards__item">
-          <p class="about-cards__text">Мгновенные выплаты — по запросу или по расписанию</p>
+          <p class="about-cards__text" data-i18n="aboutCard3">Мгновенные выплаты — по запросу или по расписанию</p>
           <img src="./img/about-img-3.png" alt="" class="about-cards__image" width="280" height="266">
         </div>
         <div class="about-cards__item">
-          <p class="about-cards__text">Личный <br> менеджер 24/7</p>
+          <p class="about-cards__text" data-i18n="aboutCard4">Личный <br> менеджер 24/7</p>
           <img src="./img/about-img-4.png" alt="" class="about-cards__image" width="280" height="266">
         </div>
       </section>
 
 <section class="stats">
   <div class="stats__header">
-    <h2 class="stats__title">Статистика в цифрах</h2>
+    <h2 class="stats__title" data-i18n="statsTitle">Статистика в цифрах</h2>
   </div>
 
   <div class="stats__main">
@@ -282,8 +289,8 @@
               <path class="stats__icon-path" d="m22.668 6.389.111 5.94c.054.16.275.198.423.215.501.059 2.553-.116 2.79.072.096.077.1.172.114.284.1.76-.134 1.847-.004 2.57.047.258.302.265.513.284.56.05 1.936.072 2.47 0 .26-.034.322-.095.357-.36.095-.723-.114-1.694.001-2.405.021-.132.114-.348.233-.405.187-.09 2.467-.07 2.68.02a.55.55 0 0 1 .22.18l-.002 9.058c-.111.169-.258.27-.47.247L3.62 22.042c-.168-.112-.267-.26-.245-.474l.046-8.782c.129-.21.246-.226.47-.247.49-.048 1.762-.062 2.234.001.26.035.322.096.357.361.095.722-.114 1.693 0 2.404a.62.62 0 0 0 .234.406h3.02c.097-.055.137-.135.156-.243.134-.72-.1-1.81-.001-2.567.014-.112.018-.208.115-.285.236-.187 2.289-.012 2.79-.07.146-.018.368-.056.422-.216l.051-5.88c.107-.120.248-.144.397-.161.396-.046 1.866-.065 2.223.004.084.016.154.04.209.11l.087 9.132c.06.175.175.198.337.22.897.12 2.078-.082 3.006-.02l.22-.18.09-9.048a.3.3 0 0 1 .143-.177c.162-.08 1.958-.068 2.268-.043.145.012.291.012.414.103zM3.757 25.307l28.418-.012c.26.041.396.18.437.44.062.4.062 1.915 0 2.315s-.326.421-.667.45L3.98 28.497c-.316-.05-.551-.077-.6-.437s-.058-2.07.006-2.408c.038-.199.195-.288.372-.345M3.046 6.389c.90.125.90.272.102.418.045.536.053 1.564.002 2.093-.029.299-.037.397-.359.44-.452.06-1.938.06-2.39 0-.263-.035-.323-.099-.357-.36-.06-.463-.056-1.864-.001-2.334.038-.331.225-.333.517-.36.336-.03 2.347-.038 2.487.103m30.102-.084c.214-.065 2.154-.059 2.45-.02.264.036.324.099.358.361.057.44.057 1.892 0 2.332-.035.266-.098.327-.357.361-.44.059-1.87.058-2.312 0-.267-.034-.403-.174-.437-.44-.055-.43-.048-1.654.002-2.091.021-.182.102-.445.296-.503M16.626.052c.24-.071 2.199-.06 2.531-.02.332.038.33.227.357.521.043.49.052 1.53-.003 2.01-.03.272-.067.41-.354.443-.518.062-1.784.052-2.312 0-.297-.029-.394-.037-.437-.361-.035-.271-.023-2.312.043-2.45a.3.3 0 0 1 .176-.143" fill="#1F1F1F"/>
             </svg>
             <div class="stats__content">
-              <p class="stats__count">800+ офферов</p>
-              <p class="stats__description">800+ актуальных и проверенных офферов под любые вертикали и форматы. Доступ к эксклюзиву и топовым продуктам — выбирай, лей, зарабатывай</p>
+              <p class="stats__count" data-i18n="statsCount1">800+ офферов</p>
+              <p class="stats__description" data-i18n="statsDesc1">800+ актуальных и проверенных офферов под любые вертикали и форматы. Доступ к эксклюзиву и топовым продуктам — выбирай, лей, зарабатывай</p>
             </div>
           </div>
         </div>
@@ -306,8 +313,8 @@
               <path class="stats__icon-path" d="M12.563 5.579v1.315l1.36.045V8.3c-.044-.014-.098.046-.113.046h-1.247v-1.36h-5.51c-.014 0-.035-.058-.069-.046v1.406H5.783a.6.6 0 0 1-.205-.113V6.939l1.361-.045V5.6l.068-.068h5.397c.025 0 .101.07.159.046M2.766 15.24v2.743l-.068.068H1.36v-2.744l.068-.068zM5.579 1.406v1.406H2.812c.027-.386-.021-.774-.033-1.158-.002-.073-.01-.199.056-.248zM2.767 2.812H1.384v2.767h1.383zm2.857 24.899H2.812v1.361h2.812z" fill="#1F1F1F"/>
             </svg>
             <div class="stats__content">
-              <p class="stats__count">50+ GEO (Tier 1/2/3)</p>
-              <p class="stats__description">Работаем по всему миру: более 50 GEO, включая Tier 1, 2 и 3 регионы. Ты сам выбираешь рынок — мы обеспечиваем результат и выплату</p>
+              <p class="stats__count" data-i18n="statsCount2">50+ GEO (Tier 1/2/3)</p>
+              <p class="stats__description" data-i18n="statsDesc2">Работаем по всему миру: более 50 GEO, включая Tier 1, 2 и 3 регионы. Ты сам выбираешь рынок — мы обеспечиваем результат и выплату</p>
             </div>
           </div>
         </div>
@@ -329,8 +336,8 @@
               <path class="stats__icon-path" d="M30.933 17.827H20.654v-6.226h10.254zm-7.882-4.15-.47.123v1.927l.075.074h1.73c.085 0 .32-.121.32-.222V13.75l-.074-.074z" fill="#1F1F1F"/>
             </svg>
             <div class="stats__content">
-              <p class="stats__count">160 способов выплат (crypto/SEPA/SWIFT)</p>
-              <p class="stats__description">160 способов вывести заработанное: крипта, SEPA, SWIFT и многое другое. Без ограничений, без ожидания. Только удобство</p>
+              <p class="stats__count" data-i18n="statsCount3">160 способов выплат (crypto/SEPA/SWIFT)</p>
+              <p class="stats__description" data-i18n="statsDesc3">160 способов вывести заработанное: крипта, SEPA, SWIFT и многое другое. Без ограничений, без ожидания. Только удобство</p>
             </div>
           </div>
         </div>
@@ -350,8 +357,8 @@
               <path class="stats__icon-path" d="M17.447 7.5c.023.017-.047.06-.047.07v1.527c0 .038.073.168.056.245a1 1 0 0 0 .109.056h2.073c.014 0 .036-.06.07-.047v2.083h1.58l.07.07v1.828h-2.804l-.07-.07v-1.735h-4.242v3.749h5.42v2.037h1.696v3.91l-.07.07h-1.626v1.99h-2.215l-.07 1.944H15.42l.047-1.944h-2.261v-1.99h-1.768l-.07-.07v-1.966h2.85l.071.069V21.2h4.124l.07-.069v-3.818h-5.372v-1.99h-1.626c-.015 0-.071-.062-.117-.047v-3.842h1.838V9.467l.07-.07h2.12l.071-.069V7.57c0-.013-.06-.035-.047-.069zM22.498 0h-12.27v2.53h12.27zm2.557 2.53h-2.557v2.53h2.557zm2.557 2.53h-2.557v2.53h2.557zm2.558 2.53h-2.558v2.53h2.558zM7.672 5.06h2.557V2.53H7.672zM5.114 7.59h2.558V5.06H5.114zm-2.557 2.53h2.557V7.59H2.557zm22.498 17.2h-2.558v2.53h2.558zm2.557-2.531h-2.557v2.53h2.557zm2.558-2.53h-2.558v2.53h2.558zm-22.498 7.59h2.557v-2.53H7.672zM5.114 27.32l2.558-.001v-2.53H5.114zm-2.557-2.53h2.557v-2.53H2.557zm19.941 5.407h-12.27v2.53h12.27zm10.229-7.937V10.12H30.17v12.139zm-30.17 0V10.12H0v12.139z" fill="#1F1F1F"/>
             </svg>
             <div class="stats__content">
-              <p class="stats__count">$944 — средний ежемесячный доход партнёра (по данным сети)</p>
-              <p class="stats__description">Средний доход наших партнёров — $944 в месяц. Цифры говорят сами за себя. Готов выйти на новый уровень?</p>
+              <p class="stats__count" data-i18n="statsCount4">$944 — средний ежемесячный доход партнёра (по данным сети)</p>
+              <p class="stats__description" data-i18n="statsDesc4">Средний доход наших партнёров — $944 в месяц. Цифры говорят сами за себя. Готов выйти на новый уровень?</p>
             </div>
           </div>
         </div>
@@ -363,23 +370,23 @@
 <a name="offers"></a>
 <section class="offers">
   <div class="container">
-    <h2 class="offers__title">Топ‑офферы недели</h2>
+    <h2 class="offers__title" data-i18n="offersTitle">Топ‑офферы недели</h2>
 
     <div class="offers__grid">
       <!-- Карточка 1 -->
       <div class="offers__card-wrapper">
         <div class="offers__card">
-          <h3 class="offers__card-title">Brand name</h3>
+          <h3 class="offers__card-title" data-i18n="offersCardBrand">Brand name</h3>
           <div class="offers__card-grid">
             <div class="offers__card-left">
               <div class="offers__row">
-                <p class="offers__label">Оффер</p>
+                <p class="offers__label" data-i18n="offersLabelOffer">Оффер</p>
               </div>
               <div class="offers__row">
-                <p class="offers__label">CPA</p>
+                <p class="offers__label" data-i18n="offersLabelCPA">CPA</p>
               </div>
               <div class="offers__row">
-                <p class="offers__label">EPC</p>
+                <p class="offers__label" data-i18n="offersLabelEPC">EPC</p>
               </div>
             </div>
             <div class="offers__card-right">
@@ -400,17 +407,17 @@
       <!-- Карточка 2 -->
       <div class="offers__card-wrapper">
         <div class="offers__card">
-          <h3 class="offers__card-title">Brand name</h3>
+          <h3 class="offers__card-title" data-i18n="offersCardBrand">Brand name</h3>
           <div class="offers__card-grid">
             <div class="offers__card-left">
               <div class="offers__row">
-                <p class="offers__label">Оффер</p>
+                <p class="offers__label" data-i18n="offersLabelOffer">Оффер</p>
               </div>
               <div class="offers__row">
-                <p class="offers__label">CPA</p>
+                <p class="offers__label" data-i18n="offersLabelCPA">CPA</p>
               </div>
               <div class="offers__row">
-                <p class="offers__label">EPC</p>
+                <p class="offers__label" data-i18n="offersLabelEPC">EPC</p>
               </div>
             </div>
             <div class="offers__card-right">
@@ -431,17 +438,17 @@
       <!-- Карточка 3 -->
       <div class="offers__card-wrapper">
         <div class="offers__card">
-          <h3 class="offers__card-title">Brand name</h3>
+          <h3 class="offers__card-title" data-i18n="offersCardBrand">Brand name</h3>
           <div class="offers__card-grid">
             <div class="offers__card-left">
               <div class="offers__row">
-                <p class="offers__label">Оффер</p>
+                <p class="offers__label" data-i18n="offersLabelOffer">Оффер</p>
               </div>
               <div class="offers__row">
-                <p class="offers__label">CPA</p>
+                <p class="offers__label" data-i18n="offersLabelCPA">CPA</p>
               </div>
               <div class="offers__row">
-                <p class="offers__label">EPC</p>
+                <p class="offers__label" data-i18n="offersLabelEPC">EPC</p>
               </div>
             </div>
             <div class="offers__card-right">
@@ -462,17 +469,17 @@
       <!-- Карточка 4 -->
       <div class="offers__card-wrapper">
         <div class="offers__card">
-          <h3 class="offers__card-title">Brand name</h3>
+          <h3 class="offers__card-title" data-i18n="offersCardBrand">Brand name</h3>
           <div class="offers__card-grid">
             <div class="offers__card-left">
               <div class="offers__row">
-                <p class="offers__label">Оффер</p>
+                <p class="offers__label" data-i18n="offersLabelOffer">Оффер</p>
               </div>
               <div class="offers__row">
-                <p class="offers__label">CPA</p>
+                <p class="offers__label" data-i18n="offersLabelCPA">CPA</p>
               </div>
               <div class="offers__row">
-                <p class="offers__label">EPC</p>
+                <p class="offers__label" data-i18n="offersLabelEPC">EPC</p>
               </div>
             </div>
             <div class="offers__card-right">
@@ -492,10 +499,9 @@
     </div>
 
     <div class="cta-block">
-  <p class="cta-block__title">Готов зарабатывать с нами?</p>
-  <p class="cta-block__description">Присоединяйся к нашим партнёрам — выбирай оффер, заливай трафик и получай свои выплаты. Свяжись с нами, чтобы стартовать!</p>
-  <a href="https://trafficradar.affise.com/v2/sign/up" class="hero__cta">
-    Стать партнером
+  <p class="cta-block__title" data-i18n="ctaTitle">Готов зарабатывать с нами?</p>
+  <p class="cta-block__description" data-i18n="ctaDesc">Присоединяйся к нашим партнёрам — выбирай оффер, заливай трафик и получай свои выплаты. Свяжись с нами, чтобы стартовать!</p>
+  <a href="https://trafficradar.affise.com/v2/sign/up" class="hero__cta" data-i18n="ctaBtn">Стать партнером
     <svg class="cta-block__icon" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path class="cta-block__icon-path" fill="#fff" d="M26.61 27.222V9.444h4.444v17.778zM13.277 9.444H26.61v4.444H13.277zm8.889 4.445h4.444v4.444h-4.444zm-4.444 4.444h4.444v4.444h-4.444zm-4.445 4.445h4.444v4.444h-4.444zm-4.444 4.444h4.444v4.444H8.833z"/>
     </svg>
@@ -506,7 +512,7 @@
 
 <a name="instruments"></a>
 <section class="instruments container">
-  <h2 class="instruments__title">Инструменты</h2>
+  <h2 class="instruments__title" data-i18n="instrumentsTitle">Инструменты</h2>
   <div class="instruments__grid">
     <img class="instruments__item" src="./img/instrument-img-1.webp" alt="Инструмент 1">
     <img class="instruments__item" src="./img/instrument-img-2.webp" alt="Инструмент 2">
@@ -517,95 +523,122 @@
   </div>
 
     <div class="calculator">
-        <h2 class="calculator-title">Калькулятор доходности</h2>
+        <h2 class="calculator-title" data-i18n="calculatorTitle">Калькулятор доходности</h2>
         <div class="form-group">
             <select id="country">
-                <option value="">Выберите страну</option>
-                <optgroup label="Tier 1">
-                    <option value="germany">Германия</option>
-                    <option value="uk">Великобритания</option>
-                    <option value="canada">Канада</option>
-                    <option value="australia">Австралия</option>
-                    <option value="norway">Норвегия</option>
-                    <option value="sweden">Швеция</option>
-                    <option value="netherlands">Нидерланды</option>
-                    <option value="finland">Финляндия</option>
-                    <option value="switzerland">Швейцария</option>
-                    <option value="belgium">Бельгия</option>
-                    <option value="france">Франция</option>
-                    <option value="ireland">Ирландия</option>
+                <option value="" data-i18n="selectCountry">Выберите страну</option>
+                <optgroup label="Tier 1" data-i18n="tier1">
+                    <option value="germany" data-i18n="germany">Германия</option>
+                    <option value="uk" data-i18n="uk">Великобритания</option>
+                    <option value="canada" data-i18n="canada">Канада</option>
+                    <option value="australia" data-i18n="australia">Австралия</option>
+                    <option value="norway" data-i18n="norway">Норвегия</option>
+                    <option value="sweden" data-i18n="sweden">Швеция</option>
+                    <option value="netherlands" data-i18n="netherlands">Нидерланды</option>
+                    <option value="finland" data-i18n="finland">Финляндия</option>
+                    <option value="switzerland" data-i18n="switzerland">Швейцария</option>
+                    <option value="belgium" data-i18n="belgium">Бельгия</option>
+                    <option value="france" data-i18n="france">Франция</option>
+                    <option value="ireland" data-i18n="ireland">Ирландия</option>
                 </optgroup>
-                <optgroup label="Tier 2">
-                    <option value="poland">Польша</option>
-                    <option value="spain">Испания</option>
-                    <option value="italy">Италия</option>
-                    <option value="portugal">Португалия</option>
-                    <option value="czech">Чехия</option>
-                    <option value="hungary">Венгрия</option>
-                    <option value="romania">Румыния</option>
-                    <option value="greece">Греция</option>
-                    <option value="slovakia">Словакия</option>
-                    <option value="croatia">Хорватия</option>
-                    <option value="bulgaria">Болгария</option>
-                    <option value="slovenia">Словения</option>
-                    <option value="latvia">Латвия</option>
-                    <option value="lithuania">Литва</option>
-                    <option value="estonia">Эстония</option>
+                <optgroup label="Tier 2" data-i18n="tier2">
+                    <option value="poland" data-i18n="poland">Польша</option>
+                    <option value="spain" data-i18n="spain">Испания</option>
+                    <option value="italy" data-i18n="italy">Италия</option>
+                    <option value="portugal" data-i18n="portugal">Португалия</option>
+                    <option value="czech" data-i18n="czech">Чехия</option>
+                    <option value="hungary" data-i18n="hungary">Венгрия</option>
+                    <option value="romania" data-i18n="romania">Румыния</option>
+                    <option value="greece" data-i18n="greece">Греция</option>
+                    <option value="slovakia" data-i18n="slovakia">Словакия</option>
+                    <option value="croatia" data-i18n="croatia">Хорватия</option>
+                    <option value="bulgaria" data-i18n="bulgaria">Болгария</option>
+                    <option value="slovenia" data-i18n="slovenia">Словения</option>
+                    <option value="latvia" data-i18n="latvia">Латвия</option>
+                    <option value="lithuania" data-i18n="lithuania">Литва</option>
+                    <option value="estonia" data-i18n="estonia">Эстония</option>
                 </optgroup>
-                <optgroup label="Tier 3">
-                    <option value="ukraine">Украина</option>
-                    <option value="kazakhstan">Казахстан</option>
-                    <option value="india">Индия</option>
-                    <option value="pakistan">Пакистан</option>
-                    <option value="philippines">Филиппины</option>
-                    <option value="indonesia">Индонезия</option>
-                    <option value="vietnam">Вьетнам</option>
-                    <option value="thailand">Таиланд</option>
-                    <option value="mexico">Мексика</option>
-                    <option value="brazil">Бразилия</option>
-                    <option value="argentina">Аргентина</option>
-                    <option value="colombia">Колумбия</option>
-                    <option value="turkey">Турция</option>
-                    <option value="egypt">Египет</option>
-                    <option value="morocco">Марокко</option>
-                    <option value="nigeria">Нигерия</option>
+                <optgroup label="Tier 3" data-i18n="tier3">
+                    <option value="ukraine" data-i18n="ukraine">Украина</option>
+                    <option value="kazakhstan" data-i18n="kazakhstan">Казахстан</option>
+                    <option value="india" data-i18n="india">Индия</option>
+                    <option value="pakistan" data-i18n="pakistan">Пакистан</option>
+                    <option value="philippines" data-i18n="philippines">Филиппины</option>
+                    <option value="indonesia" data-i18n="indonesia">Индонезия</option>
+                    <option value="vietnam" data-i18n="vietnam">Вьетнам</option>
+                    <option value="thailand" data-i18n="thailand">Таиланд</option>
+                    <option value="mexico" data-i18n="mexico">Мексика</option>
+                    <option value="brazil" data-i18n="brazil">Бразилия</option>
+                    <option value="argentina" data-i18n="argentina">Аргентина</option>
+                    <option value="colombia" data-i18n="colombia">Колумбия</option>
+                    <option value="turkey" data-i18n="turkey">Турция</option>
+                    <option value="egypt" data-i18n="egypt">Египет</option>
+                    <option value="morocco" data-i18n="morocco">Марокко</option>
+                    <option value="nigeria" data-i18n="nigeria">Нигерия</option>
                 </optgroup>
             </select>
         </div>
         <div class="form-group">
             <select id="traffic-source">
-                <option value="">Выберите источник трафика</option>
-                <option value="facebook">Facebook/TikTok</option>
-                <option value="google">Google Ads/UAC</option>
-                <option value="seo">SEO</option>
-                <option value="push">Push/Pop</option>
-                <option value="aso">ASO/APK</option>
+                <option value="" data-i18n="selectTrafficSource">Выберите источник трафика</option>
+                <option value="facebook" data-i18n="facebook">Facebook/TikTok</option>
+                <option value="google" data-i18n="google">Google Ads/UAC</option>
+                <option value="seo" data-i18n="seo">SEO</option>
+                <option value="push" data-i18n="push">Push/Pop</option>
+                <option value="aso" data-i18n="aso">ASO/APK</option>
             </select>
         </div>
         <div class="form-group">
-            <input type="number" id="deposits" min="0" placeholder="Сколько депозитов вы ожидаете?">
+            <input type="number" id="deposits" min="0" placeholder="Сколько депозитов вы ожидаете?" data-i18n-placeholder="depositsPlaceholder">
         </div>
         <div id="result" class="result hidden">
-            Ожидаемая выплата: <span id="payout">0$</span> 
+            <span data-i18n="expectedPayout">Ожидаемая выплата</span>: <span id="payout">0$</span> 
         </div>
     </div>
+
+    <button id="submit-btn" class="submit-btn" data-i18n="submitBtn">Отправить</button>
+
+<div id="lead-form" class="lead-form hidden">
+    <h3 data-i18n="leaveContacts">Оставьте свои контакты</h3>
+    <div id="calculator-data" class="calculator-data"></div>
+    
+    <div class="form-group">
+        <input type="text" id="name" placeholder="Ваше имя" required data-i18n-placeholder="yourName">
+    </div>
+    <div class="form-group">
+        <input type="email" id="email" placeholder="Ваш Email" required data-i18n-placeholder="yourEmail">
+    </div>
+    <div class="form-group">
+        <input type="text" id="telegram" placeholder="Ваш Telegram" required data-i18n-placeholder="yourTelegram">
+    </div>
+    
+    <button id="final-submit" class="submit-btn" data-i18n="submitApplication">Отправить заявку</button>
+</div>
 </section>
 
+<section class="container partners">
+  <h2 class="partners-title" data-i18n="partnersTitle">Партнери</h2>
+  <div class="partners-container">
+    <img src="./img/partner-one.png" alt="" class="partners-image">
+    <img src="./img/partner-two.png" alt="" class="partners-image">
+    <img src="./img/partner-three.png" alt="" class="partners-image">
+    <img src="./img/partner-four.png" alt="" class="partners-image">
+  </div>
+</section>
 <a name="bonuses"></a>
 <section class="bonuses container">
-      <h2 class="bonuses__title">Бонусы</h2>
+      <h2 class="bonuses__title" data-i18n="bonusesTitle">Бонусы</h2>
   <div class="bonuses__container container">
     
     <div class="bonuses__content">
       <div class="bonuses__program">
-        <p class="bonuses__program-text">Бонусная программа</p>
+        <p class="bonuses__program-text" data-i18n="bonusesProgram">Бонусная программа</p>
       </div>
 
       <div class="bonuses__offer">
-        <p class="bonuses__offer-text">Получите до $500 бонусного баланса за первый депозит трафика</p>
-        <p class="bonuses__offer-note">Бонусы начисляются автоматически и доступны к выводу после первой выплаты</p>
-        <a href="https://trafficradar.affise.com/v2/sign/up" class="hero__cta bonuses__cta">
-          ПОЛУЧИТЬ БОНУС
+        <p class="bonuses__offer-text" data-i18n="bonusesOfferText">Получите до $500 бонусного баланса за первый депозит трафика</p>
+        <p class="bonuses__offer-note" data-i18n="bonusesOfferNote">Бонусы начисляются автоматически и доступны к выводу после первой выплаты</p>
+        <a href="https://trafficradar.affise.com/v2/sign/up" class="hero__cta bonuses__cta" data-i18n="bonusesBtn">ПОЛУЧИТЬ БОНУС
           <svg class="button__icon" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill="#fff" d="M26.61 27.222V9.444h4.444v17.778zM13.277 9.444H26.61v4.444H13.277zm8.889 4.445h4.444v4.444h-4.444zm-4.444 4.444h4.444v4.444h-4.444zm-4.445 4.445h4.444v4.444h-4.444zm-4.444 4.444h4.444v4.444H8.833z"/>
           </svg>
@@ -617,7 +650,7 @@
 
 <a name="reviews"></a>
     <section class="container reviews">
-      <h2 class="reviews-title">Отзывы</h2>
+      <h2 class="reviews-title" data-i18n="reviewsTitle">Отзывы</h2>
       
       <div class="swiper-container reviews-swiper">
         <div class="swiper-wrapper">
@@ -626,12 +659,10 @@
                     <div class="stars">
                         <img src="./img/stars.webp" alt="stars">
                     </div>
-                    <div class="text">
-                      Конверт по офферам в Tier-2 стабильно держится выше 2%. Плюс дают быстрый фидбэк по креативам и трафику
-                    </div>
+                    <div class="text" data-i18n="reviewText1">Конверт по офферам в Tier-2 стабильно держится выше 2%. Плюс дают быстрый фидбэк по креативам и трафику</div>
                     <div class="author">
                         <img src="./img/review-one.webp" alt="Author" class="author-img">
-                        <div class="author-name">Саша Загородний</div>
+                        <div class="author-name" data-i18n="reviewAuthor1">Саша Загородний</div>
                     </div>
                 </div>
                 
@@ -642,13 +673,11 @@
                     <div class="stars">
                         <img src="./img/stars.webp" alt="stars">
                     </div>
-                    <div class="text">
-                      Traffic Radar - отличная команда. Отвечают всегда во время и реально помогают. Был технический вопрос по трекеру — решили всё за 10 минут. Для меня это показатель, что здесь ценят отношения, а не только цифры
-                    </div>
+                    <div class="text" data-i18n="reviewText2">Traffic Radar - отличная команда. Отвечают всегда во время и реально помогают. Был технический вопрос по трекеру — решили всё за 10 минут. Для меня это показатель, что здесь ценят отношения, а не только цифры</div>
                     <div class="author">
                         <img src="./img/review-two.webp" alt="Author" class="author-img">
-                        <div class="author-name">Никита Иванчук</div>
-                        <button class="read-more">Читати далi...</button>
+                        <div class="author-name" data-i18n="reviewAuthor2">Никита Иванчук</div>
+                        <button class="read-more" data-i18n="reviewReadMore">Читати далi...</button>
                     </div>
                 </div>
             </div>
@@ -658,13 +687,11 @@
                     <div class="stars">
                         <img src="./img/stars.webp" alt="stars">
                     </div>
-                    <div class="text">
-                      Ставки на офферах — реально боевые. Конверт по гэмбле — огонь. Лью на Tier‑1 и Tier‑2 — всё прозрачно, без сливов и странных апрувов. Если нужен уверенный доход — это ваш вариант. Уже советовал ребятам из команды
-                    </div>
+                    <div class="text" data-i18n="reviewText3">Ставки на офферах — реально боевые. Конверт по гэмбле — огонь. Лью на Tier‑1 и Tier‑2 — всё прозрачно, без сливов и странных апрувов. Если нужен уверенный доход — это ваш вариант. Уже советовал ребятам из команды</div>
                     <div class="author">
                         <img src="./img/review-three.webp" alt="Author" class="author-img">
-                        <div class="author-name">Ярослав Мельник</div>
-                        <button class="read-more">Читати далi...</button>
+                        <div class="author-name" data-i18n="reviewAuthor3">Ярослав Мельник</div>
+                        <button class="read-more" data-i18n="reviewReadMore">Читати далi...</button>
                     </div>
                 </div>
             </div>
@@ -674,13 +701,11 @@
                     <div class="stars">
                         <img src="./img/stars.webp" alt="stars">
                     </div>
-                    <div class="text">
-                      Первый месяц — и уже в плюсе. Делал такие же объёмы, как раньше, а заработал почти в два раза больше. Разница — в подходе и реальных ставках. Здесь действительно выгодно работать, а не “просто лить” ради галочки
-                    </div>
+                    <div class="text" data-i18n="reviewText4">Первый месяц — и уже в плюсе. Делал такие же объёмы, как раньше, а заработал почти в два раза больше. Разница — в подходе и реальных ставках. Здесь действительно выгодно работать, а не "просто лить" ради галочки</div>
                     <div class="author">
                         <img src="./img/review-four.webp" alt="Author" class="author-img">
-                        <div class="author-name">Кирилл Павленко</div>
-                        <button class="read-more">Читати далi...</button>
+                        <div class="author-name" data-i18n="reviewAuthor4">Кирилл Павленко</div>
+                        <button class="read-more" data-i18n="reviewReadMore">Читати далi...</button>
                     </div>
                 </div>
             </div>
@@ -690,13 +715,11 @@
                     <div class="stars">
                         <img src="./img/stars.webp" alt="stars">
                     </div>
-                    <div class="text">
-                      Люблю, когда всё по делу: понятные отчёты, чёткий апрув, прозрачные условия. Плюс — калькулятор выплат прям спасает. Видно, что ребята заморачиваются не ради лоска, а чтобы реально было удобно
-                    </div>
+                    <div class="text" data-i18n="reviewText5">Люблю, когда всё по делу: понятные отчёты, чёткий апрув, прозрачные условия. Плюс — калькулятор выплат прям спасает. Видно, что ребята заморачиваются не ради лоска, а чтобы реально было удобно</div>
                     <div class="author">
                         <img src="./img/review-five.webp" alt="Author" class="author-img">
-                        <div class="author-name">Дмитрий Карамаш</div>
-                        <button class="read-more">Читати далi...</button>
+                        <div class="author-name" data-i18n="reviewAuthor5">Дмитрий Карамаш</div>
+                        <button class="read-more" data-i18n="reviewReadMore">Читати далi...</button>
                     </div>
                 </div>
                 
@@ -708,13 +731,11 @@
                     <div class="stars">
                         <img src="./img/stars.webp" alt="stars">
                     </div>
-                    <div class="text">
-                      Сначала просто тестировал пару офферов — сейчас лью в постоянку. Адекватный холд, вменяемый подход, хорошие бренды в каталоге. Главное — доверие. А тут с этим всё ок. Остался — и не жалею
-                    </div>
+                    <div class="text" data-i18n="reviewText6">Сначала просто тестировал пару офферов — сейчас лью в постоянку. Адекватный холд, вменяемый подход, хорошие бренды в каталоге. Главное — доверие. А тут с этим всё ок. Остался — и не жалею</div>
                     <div class="author">
                         <img src="./img/review-six.webp" alt="Author" class="author-img">
-                        <div class="author-name">Сергей Казак</div>
-                        <button class="read-more">Читати далi...</button>
+                        <div class="author-name" data-i18n="reviewAuthor6">Сергей Казак</div>
+                        <button class="read-more" data-i18n="reviewReadMore">Читати далi...</button>
                     </div>
                 </div>
                 
@@ -725,13 +746,11 @@
                     <div class="stars">
                         <img src="./img/stars.webp" alt="stars">
                     </div>
-                    <div class="text">
-                      Сотрудничаю с Traffic Radar уже 5 месяцев и доволен. Апрув выше, чем в других сетях, а выплаты стабильно по пятницам, без задержек
-                    </div>
+                    <div class="text" data-i18n="reviewText7">Сотрудничаю с Traffic Radar уже 5 месяцев и доволен. Апрув выше, чем в других сетях, а выплаты стабильно по пятницам, без задержек</div>
                     <div class="author">
                         <img src="./img/review-seven.webp" alt="Author" class="author-img">
-                        <div class="author-name">Давид Чубаев</div>
-                        <button class="read-more">Читати далi...</button>
+                        <div class="author-name" data-i18n="reviewAuthor7">Давид Чубаев</div>
+                        <button class="read-more" data-i18n="reviewReadMore">Читати далi...</button>
                     </div>
                 </div>
                 
@@ -755,18 +774,18 @@
     </section>
 
       <section class="container">
-        <h2 class="how-start-title">Как начать?</h2>
+        <h2 class="how-start-title" data-i18n="howStartTitle">Как начать?</h2>
         <div class="about-cards">
           <div class="about-cards__item">
-          <p class="about-cards__text">Зарегистрируйтесь</p>
+          <p class="about-cards__text" data-i18n="howStartStep1">Зарегистрируйтесь</p>
           <img src="./img/how-start-first.webp" alt="" class="about-cards__image" width="280" height="266">
         </div>
         <div class="about-cards__item">
-          <p class="about-cards__text">Получите доступ к офферам</p>
+          <p class="about-cards__text" data-i18n="howStartStep2">Получите доступ к офферам</p>
           <img src="./img/how-start-second.webp" alt="" class="about-cards__image" width="280" height="266">
         </div>
         <div class="about-cards__item">
-          <p class="about-cards__text">Получайте выплаты без задержек</p>
+          <p class="about-cards__text" data-i18n="howStartStep3">Получайте выплаты без задержек</p>
           <img src="./img/how-start-third.webp" alt="" class="about-cards__image" width="280" height="266">
         </div>
         <div class="about-cards__item how-start-center">
@@ -776,20 +795,20 @@
       </section>
 
       <section class="container faq">
-        <h2 class="faq-title">FAQ</h2>
+        <h2 class="faq-title" data-i18n="faqTitle">FAQ</h2>
           <div class="accordion">
           <div class="items">
           <div class="accordion__item">
-						<div class="accordion__header" data-toggle="#faq1"><span class="accordion-number">01</span>Какие вертикали у вас?</div>
+						<div class="accordion__header" data-toggle="#faq1"><span class="accordion-number">01</span><span data-i18n="faqQ1">Какие вертикали у вас?</span></div>
 						<div class="accordion__content" id="faq1">
-              <p>Гемблинг/Беттинг</p>
+              <p data-i18n="faqA1">Гемблинг/Беттинг</p>
 						</div>
 					</div>
 
 					<div class="accordion__item">
-						<div class="accordion__header" data-toggle="#faq2"><span class="accordion-number">02</span>Какой минимальный payout?</div>
+						<div class="accordion__header" data-toggle="#faq2"><span class="accordion-number">02</span><span data-i18n="faqQ2">Какой минимальный payout?</span></div>
 						<div class="accordion__content" id="faq2">
-							<p>От 30$</p>
+							<p data-i18n="faqA2">От 30$</p>
 						
 						</div>
 					</div>
@@ -798,17 +817,17 @@
 
           <div class="items">
             					<div class="accordion__item">
-						<div class="accordion__header" data-toggle="#faq3"><span class="accordion-number">03</span>Поддерживаете ли вы FB‑Ads?</div>
+						<div class="accordion__header" data-toggle="#faq3"><span class="accordion-number">03</span><span data-i18n="faqQ3">Поддерживаете ли вы FB‑Ads?</span></div>
 						<div class="accordion__content" id="faq3">
-							<p>Принимаем FB‑Ads и другие источники трафика</p>
+							<p data-i18n="faqA3">Принимаем FB‑Ads и другие источники трафика</p>
 							
 						</div>
 					</div>
 
           <div class="accordion__item">
-						<div class="accordion__header" data-toggle="#faq4"><span class="accordion-number">04</span>Есть ли реферальная программа?</div>
+						<div class="accordion__header" data-toggle="#faq4"><span class="accordion-number">04</span><span data-i18n="faqQ4">Есть ли реферальная программа?</span></div>
 						<div class="accordion__content" id="faq4">
-							<p>Да, 3% дохода от рефа 4 месяца</p>
+							<p data-i18n="faqA4">Да, 3% дохода от рефа 4 месяца</p>
 							
 						</div>
 					</div>
@@ -816,17 +835,17 @@
 
           <div class="items">
                       <div class="accordion__item">
-						<div class="accordion__header" data-toggle="#faq5"><span class="accordion-number">05</span>Сколько длится холд и как часто выплаты?</div>
+						<div class="accordion__header" data-toggle="#faq5"><span class="accordion-number">05</span><span data-i18n="faqQ5">Сколько длится холд и как часто выплаты?</span></div>
 						<div class="accordion__content" id="faq5">
-							<p>Зависит от оговоренных условий с рекламодателем - но командам крупным платит компания, не ожидая выплаты от рекламодателя</p>
+							<p data-i18n="faqA5">Зависит от оговоренных условий с рекламодателем - но командам крупным платит компания, не ожидая выплаты от рекламодателя</p>
 							
 						</div>
 					</div>
 
           <div class="accordion__item">
-						<div class="accordion__header" data-toggle="#faq6"><span class="accordion-number">06</span>Как быстро мне назначат менеджера после регистрации?</div>
+						<div class="accordion__header" data-toggle="#faq6"><span class="accordion-number">06</span><span data-i18n="faqQ6">Как быстро мне назначат менеджера после регистрации?</span></div>
 						<div class="accordion__content" id="faq6">
-							<p>Моментально. Менеджер свяжется с тобой сразу после регистрации и поможет запуститься без лишней волокиты</p>
+							<p data-i18n="faqA6">Моментально. Менеджер свяжется с тобой сразу после регистрации и поможет запуститься без лишней волокиты</p>
 							
 						</div>
 					</div>
@@ -834,17 +853,17 @@
 
                     <div class="items">
                       <div class="accordion__item">
-						<div class="accordion__header" data-toggle="#faq7"><span class="accordion-number">07</span>Какие способы выплат вы поддерживаете?</div>
+						<div class="accordion__header" data-toggle="#faq7"><span class="accordion-number">07</span><span data-i18n="faqQ7">Какие способы выплат вы поддерживаете?</span></div>
 						<div class="accordion__content" id="faq7">
-							<p>Крипта, Банк</p>
+							<p data-i18n="faqA7">Крипта, Банк</p>
 							
 						</div>
 					</div>
 
           <div class="accordion__item">
-						<div class="accordion__header" data-toggle="#faq8"><span class="accordion-number">08</span>Предоставляете ли вы креативы или лендинги?</div>
+						<div class="accordion__header" data-toggle="#faq8"><span class="accordion-number">08</span><span data-i18n="faqQ8">Предоставляете ли вы креативы или лендинги?</span></div>
 						<div class="accordion__content" id="faq8">
-							<p>Не предоставляем креативы, но есть партнеры, которые могут предоставить, также лендинги даем от брендов казино </p>
+							<p data-i18n="faqA8">Не предоставляем креативы, но есть партнеры, которые могут предоставить, также лендинги даем от брендов казино </p>
 							
 						</div>
 					</div>
@@ -852,17 +871,17 @@
 
                     <div class="items">
                       <div class="accordion__item">
-						<div class="accordion__header" data-toggle="#faq9"><span class="accordion-number">09</span>Есть ли возврат отрицательного баланса?</div>
+						<div class="accordion__header" data-toggle="#faq9"><span class="accordion-number">09</span><span data-i18n="faqQ9">Есть ли возврат отрицательного баланса?</span></div>
 						<div class="accordion__content" id="faq9">
-							<p>Зависит от условий с рекламодателем</p>
+							<p data-i18n="faqA9">Зависит от условий с рекламодателем</p>
 							
 						</div>
 					</div>
 
           <div class="accordion__item">
-						<div class="accordion__header" data-toggle="#faq10"><span class="accordion-number">10</span>Могу ли я лить с трекера Keitaro или другого?</div>
+						<div class="accordion__header" data-toggle="#faq10"><span class="accordion-number">10</span><span data-i18n="faqQ10">Могу ли я лить с трекера Keitaro или другого?</span></div>
 						<div class="accordion__content" id="faq10">
-							<p>Да, мы полностью поддерживаем работу с Keitaro и другими популярными трекерами. Интеграция быстрая и простая — при необходимости поможем всё настроить.</p>
+							<p data-i18n="faqA10">Да, мы полностью поддерживаем работу с Keitaro и другими популярными трекерами. Интеграция быстрая и простая — при необходимости поможем всё настроить.</p>
 							
 						</div>
 					</div>
@@ -873,10 +892,8 @@
 
       <section class="container traffic-container">
         <div class="traffic">
-                  <h2>Готовы монетизировать свой трафик эффективнее?</h2>
-                    <a href="https://trafficradar.affise.com/v2/sign/up" class="hero__cta">
-                Стать партнером
-                
+                  <h2 data-i18n="trafficTitle">Готовы монетизировать свой трафик эффективнее?</h2>
+                    <a href="https://trafficradar.affise.com/v2/sign/up" class="hero__cta" data-i18n="trafficBtn">Стать партнером
                 <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M26.61 27.222V9.444h4.444v17.778zM13.277 9.444H26.61v4.444H13.277zm8.889 4.445h4.444v4.444h-4.444zm-4.444 4.444h4.444v4.444h-4.444zm-4.445 4.445h4.444v4.444h-4.444zm-4.444 4.444h4.444v4.444H8.833z"/></svg>
             </a>
         </div>
@@ -887,15 +904,15 @@
 <a name="contacts"></a>
 <footer>
   <div class="footer-container container">
-    <h2 class="footer-title">TRAFFIC RADAR</h2>
+    <h2 class="footer-title" data-i18n="footerTitle">TRAFFIC RADAR</h2>
     <div class="footer-content">
       <div class="footer-nav">
         <ul class="footer-nav__list">
-          <li class="footer-nav__item"><a href="#about" class="footer-nav__link">Про нас</a></li>
-          <li class="footer-nav__item"><a href="#offers" class="footer-nav__link">Топ офферы</a></li>
-          <li class="footer-nav__item"><a href="#instruments" class="footer-nav__link">Инструменты</a></li>
-          <li class="footer-nav__item"><a href="#bonuses" class="footer-nav__link">Бонусы</a></li>
-          <li class="footer-nav__item"><a href="#reviews" class="footer-nav__link">Отзывы</a></li>
+          <li class="footer-nav__item"><a href="#about" class="footer-nav__link" data-i18n="footerAbout">Про нас</a></li>
+          <li class="footer-nav__item"><a href="#offers" class="footer-nav__link" data-i18n="footerOffers">Топ офферы</a></li>
+          <li class="footer-nav__item"><a href="#instruments" class="footer-nav__link" data-i18n="footerTools">Инструменты</a></li>
+          <li class="footer-nav__item"><a href="#bonuses" class="footer-nav__link" data-i18n="footerBonuses">Бонусы</a></li>
+          <li class="footer-nav__item"><a href="#reviews" class="footer-nav__link" data-i18n="footerReviews">Отзывы</a></li>
         </ul>
       </div>
 
@@ -914,12 +931,33 @@
     </div>
 
     <div class="terms">
-      <p>ⓒ 2025 Traffic Radar</p>
-      <p>Terms of use</p>
-      <p>Privacy Policy</p>
+      <p data-i18n="footerCopyright">ⓒ 2025 Traffic Radar</p>
+      <p data-i18n="footerTerms">Terms of use</p>
+      <p data-i18n="footerPrivacy">Privacy Policy</p>
     </div>
   </div>
 </footer>
+
+<div class="widget-container">
+  <button class="close-btn" id="closeBtn">×</button>
+  
+  <div class="data-row">
+    <svg width="18" height="18" class="svg-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.596 4.125c.013.01-.026.033-.026.038v.84c0 .021.04.093.03.135a.4.4 0 0 0 .06.03h1.14c.009 0 .02-.032.04-.025V6.29h.868l.039.038v1.006h-1.542l-.04-.039V6.34H7.834v2.062h2.98v1.12h.934v2.151l-.039.038h-.894v1.095H9.596l-.04 1.069H8.482l.026-1.07H7.263v-1.094H6.29l-.039-.038v-1.082H7.82l.039.038v1.031h2.268l.039-.038v-2.1H7.21V8.427h-.894c-.009 0-.04-.033-.065-.025V6.289h1.01V5.207l.04-.038h1.166l.039-.038v-.968c0-.007-.033-.02-.026-.038zM12.374 0H5.626v1.392h6.748zm1.406 1.392h-1.406v1.391h1.406zm1.407 1.391H13.78v1.392h1.407zm1.407 1.392h-1.407v1.391h1.406zM4.22 2.783h1.406V1.392H4.219zM2.813 4.175h1.406V2.783H2.813zM1.406 5.566h1.407V4.175H1.406zm12.374 9.46h-1.406v1.391h1.406zm1.407-1.392H13.78v1.392h1.407zm1.407-1.392h-1.407v1.392h1.406zM4.22 16.417h1.406v-1.392H4.219zm-1.407-1.391h1.406v-1.392H2.813zm-1.407-1.392h1.407v-1.391H1.406zm10.968 2.975H5.626V18h6.748z" fill="#01E083"/><path d="M18 12.243V5.566h-1.407v6.676zm-16.594 0V5.566H0v6.676z" fill="#01E083"/></svg>
+      <span data-i18n="paid">Оплачено:</span>
+      <span class="value" id="paymentAmount">$750</span>
+  </div>
+
+  <div class="data-row">
+    <svg width="14" height="18" class="svg-icon" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.196 0v.932h.895l.042.041v.918h-.937v1.89h1.902v-.959h-.992v-.89l.041-.041h.979v.931h.937v.959h.895c.009 0 .021-.035.042-.027V18H0V0zM9.26.959H.965V17.04h12.097V4.713H9.26z" fill="#01E083"/><path d="M11.132 9.452H2.893v.959h8.24zm0-2.822H2.893v.932h8.24zm-2.893 5.671H2.893v.959H8.24z" fill="#01E083"/></svg>
+      <span data-i18n="invoice">Инвойс #</span>
+      <span class="value" id="invoiceNumber">3456</span>
+  </div>
+
+  <div class="data-row">
+    <svg width="20" height="20" class="svg-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.374 1H6.626v1.392h6.748zm1.406 1.392h-1.406v1.391h1.406zm1.407 1.391H14.78v1.392h1.407zm1.407 1.392h-1.407v1.391h1.406zM5.22 3.783h1.406V2.392H5.219zM3.813 5.175h1.406V3.783H3.813zM2.406 6.566h1.407V5.175H2.406zm12.374 9.46h-1.406v1.391h1.406zm1.407-1.392H14.78v1.392h1.407zm1.407-1.392h-1.407v1.392h1.406zM5.22 17.417h1.406v-1.392H5.219zm-1.407-1.391h1.406v-1.392H3.813zm-1.407-1.392h1.407v-1.391H2.406zm10.968 2.975H6.626V19h6.748z" fill="#01E083"/><path d="M19 13.243V6.566h-1.407v6.676zm-16.594 0V6.566H1v6.676zM9.069 5.8h1.241v4.8H9.07zm0 6v-1.2h4.345v1.2z" fill="#01E083"/></svg>
+      <span id="timeText" data-i18n="time">3 минуты назад</span>
+  </div>
+</div>
 
 
     <script src="./js/calculator.js"></script>
