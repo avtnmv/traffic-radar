@@ -133,7 +133,7 @@ async function submitLeadForm() {
         const form = document.createElement('form');
         form.style.display = 'none';
         form.method = 'GET';
-        form.action = 'https://script.google.com/macros/s/AKfycby-y6NWIpsiksBqyCxYT3z9geTbizGl5G7NjkxHcR_rh8_MU3yxiR6G73_2sW7URd0/exec';
+        form.action = 'https://script.google.com/macros/s/AKfycbwc5VPdahCLGFfRcVXYhCKybGCDW_lnbsbDWQTEh5LYgm5IU3f-5F0bqnZvA88Jy8tM/exec';
         form.target = 'hiddenFrame';
 
         // Добавляем параметры
