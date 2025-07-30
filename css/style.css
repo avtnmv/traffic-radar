@@ -1891,7 +1891,7 @@ footer{
 .widget-container {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   width: 230px;
   height: 162px;
   background-color: #080808;
